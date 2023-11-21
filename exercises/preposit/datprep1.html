@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+<HEAD>
+<script src="../playsound.js"></script>
+
+<LINK rel="stylesheet" type="text/css" href="../../grammar - Copy.css">
+<TITLE>Dative prepositions</TITLE>
+</HEAD>
+
+<BODY class="content">
+<audio id="ttsPlayback"></audio>
+<label class="switch">
+  <input type="checkbox" id="audioSwitch" checked>
+  <span class="slider round"></span>
+</label>
+<TABLE WIDTH="100%">
+
+  <TR>
+
+		<TD class="buttoncell"><br>    <A href="../../preposit/datpreps.htm" class="mybutton"><img src="../../page icon.png" width="25" height="25" alt="Grammar page"></A>
+    </TD>
+
+  </TR>
+
+</TABLE>
+
+<HR>
+
+
+<TABLE WIDTH="100%" border="1"><TR>
+  <TD class="title"><FONT class="title">Dative prepositions</FONT></TD></TR></TABLE><hr>
+   <table width="100%" border="1" cellpadding="5" cellspacing="5" class="cuecell">
+  <tr>
+    <td  class="instructioncell" border=0><p class="instructioncell">Answer the questions based on the cues in parentheses.</p></td>
+    <td class="headercell"><img src="../../US flag button.png" width="48" height="48" alt="US flag"><br>
+    Click in any field below to reveal a translation.<br>
+    Click again to hide it.</td>
+    <td  class="headercell"><img src="../../German flag.jpg" width="48" height="48" alt="Germany flag"><br>
+      <span class="German">Klicken Sie auf ein Feld unten, um die richtige Antwort zu sehen.<br>
+    Klicken Sie nochmals darauf, um es zu l&ouml;schen.</span></td>
+  </tr>
+  <tr>
+  <TR><TD colspan=3>  </TD></TR>
+    <td width="50%" class="cuecell" onClick="onCueClick(this)"><div class="myDIV"><em><FONT class="cue">Aus welch</FONT><span class="emphasis2">em</span><FONT class="cue"> Land</FONT> kommt Barbara? (<FONT class="emphasis2">die USA</FONT>)</em></div></td>
+    <td>
+            <div class="myDIV">From what country does Barbara come? (<span class="emphasis2">the USA</span>) <br>
+            She comes <span class="emphasis2">from the USA</span>.</div>
+</td>
+      <td width="25%" class="cuecell" onClick="onCueClick(this)">
+            <div class="myDIV"><em>Sie kommt <FONT class="emphasis2">aus den USA.</FONT></em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="1"><li>
+        <div class="myDIV"><em><FONT class="cue">Ausser </FONT><span class="emphasis2">wem</span> kennst du alle hier? (<span class="emphasis2">die zwei Frauen da</span>)</em></div>
+      </li>
+      </ol>
+    </td>
+    <td class="translationcell">
+            <div class="hide" id="Translation1" onClick="onTranslationClick(this)">You know everyone here except for whom? (<span class="emphasis2">the two women there</span>) <br>
+            I know everyone here <span class="emphasis2">except for the two women</span> there</div>
+</td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer1" onClick="onAnswerClick(this)"><em><span class="emphasis2">Ausser den zwei Frauen da</span> kenne ich alle hier.</em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="2"><li><div class="myDIV"><em><FONT class="cue">Bei </FONT><span class="emphasis2">wem</span> wohnt David in &ouml;sterreich? (<FONT class="emphasis2">Freunde</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation2" onClick="onTranslationClick(this)">At whose home is David living in Austria? (<span class="emphasis2">friends</span>) <br>
+            David is living <span class="emphasis2">at the home of friend</span>s in Austria</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer2" onClick="onAnswerClick(this)"><em>David wohnt <span class="emphasis2">bei Freunden</span> in &ouml;sterreich.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="3"><li><div class="myDIV"><em><FONT class="cue">Mit </FONT><span class="emphasis2">wem</span> fahrt ihr nach D&auml;nemark? (<FONT class="emphasis2">unsere Familie</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation3" onClick="onTranslationClick(this)">With whom are you all travelling to Denmark? (<span class="emphasis2">our family</span>) <br>
+            We are travelling <span class="emphasis2">with our family</span> to Denmark.</div>
+    </td>
+      <td width="8" valign="top">
+            <div class="hide" id="Answer3" onClick="onAnswerClick(this)"><em>Wir fahren <span class="emphasis2">mit unserer Familie</span> nach D&auml;nemark.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="4"><li><div class="myDIV"><em><FONT class="cue">Nach welch</FONT><span class="emphasis2">er</span><FONT class="cue"> Klasse</FONT> essen wir? (<FONT class="emphasis2">die Geschichtevorlesung</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation4" onClick="onTranslationClick(this)">After which class do we eat? (<span class="emphasis1">the history lecture</span>) <br>
+            You all eat <span class="emphasis2">after the history lecture</span>.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer4" onClick="onAnswerClick(this)"><em>Ihr esst <span class="emphasis2">nach der Geschichtevorlesung</span>.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="5"><li><div class="myDIV"><em><FONT class="cue">Seit </FONT><span class="emphasis2">wann</span> wohnen Sie in Frankfurt? (<FONT class="emphasis2">ein Monat</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation5" onClick="onTranslationClick(this)">How long have you been living in Frankfurt? (<span class="emphasis2">one month</span>) <br>
+            I have been living in Frankfurt <span class="emphasis2">for one month</span>.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer5" onClick="onAnswerClick(this)"><em><span class="emphasis2">Seit einem Monat</span> wohne ich in Frankfurt. </em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="6"><li><div class="myDIV"><em><FONT class="cue">Von </FONT><span class="emphasis2">wem</span> bekomme ich eine Aufenthaltsgenehmigung? (<FONT class="emphasis2">die Polizei</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation6" onClick="onTranslationClick(this)">From whom do I get a residence permit? (<span class="emphasis2">the police</span>) <br>
+            You get a residence permit <span class="emphasis2">from the police</span>.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer6" onClick="onAnswerClick(this)"><em>Sie bekommen eine Aufenthaltsgenehmigung <span class="emphasis2">von der Polizei</span>.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="7"><li><div class="myDIV"><em><FONT class="cue">Zu </FONT><span class="emphasis2">wem</span> f&auml;hrt Johann am Wochenende? (<FONT class="emphasis2">seine Grosseltern</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation7" onClick="onTranslationClick(this)">To whose home is Johann travelling on the weekend? (<span class="emphasis2">his grandparents</span>)<br>
+He is travelling <span class="emphasis2">to his grandparents'</span>.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer7" onClick="onAnswerClick(this)"><em>Er f&auml;hrt <span class="emphasis2">zu seinen Grosseltern</span>|.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="8"><li><div class="myDIV"><em><FONT class="cue">Mit welch</FONT><span class="emphasis2">em</span><FONT class="cue"> Zug</FONT> fahren sie nach M&uuml;nchen? (<FONT class="emphasis2">der Inter-City Zug</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation8" onClick="onTranslationClick(this)">By which train are they travelling to Munich? (<span class="emphasis2">the Inter-City train</span>) <br>
+            They are travelling to Munich <span class="emphasis2">by the Inter-City train.</span></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer8" onClick="onAnswerClick(this)"><em>Sie fahren <span class="emphasis2">mit dem Inter-City Zug</span> nach M&uuml;nchen.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="9"><li><div class="myDIV"><em><FONT class="cue">Aus welch</FONT><span class="emphasis2">em</span><FONT class="cue"> Fenster</FONT> schauen die Kinder? (<FONT class="emphasis2">das dritte Fenster</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation9" onClick="onTranslationClick(this)">Out of which window are the children peering? (<span class="emphasis2">the third window</span>)<br>
+They are peering <span class="emphasis2">out of the third window</span>.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer9" onClick="onAnswerClick(this)"><em>Sie schauen <span class="emphasis2">aus dem dritten Fenster</span>. </em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="10"><li><div class="myDIV"><em><FONT class="cue">Nach </FONT><span class="emphasis2">wem</span> soll dieser Roman interessant sein? (<FONT class="emphasis2">der Professor</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation10" onClick="onTranslationClick(this)">According to whom is this novel supposed to be interesting? (<span class="emphasis2">the professor</span>) <br>
+            <span class="emphasis2">According to the professor</span> this novel is supposed to be interesting</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer10" onClick="onAnswerClick(this)"><em><span class="emphasis2">Nach dem Professor</span> soll dieser Roman interessant sein. </em></div>
+    </td>
+  </tr>
+ </table>
+</BODY>
+</HTML>

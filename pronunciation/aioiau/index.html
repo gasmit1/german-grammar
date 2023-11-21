@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<title>The diphthongs [ai], [oi] and [au]</title>
+<script src="../recordaudio/index.js"></script>
+<LINK rel="stylesheet" type="text/css" href="../../grammar - Copy.css">
+</HEAD>
+
+<BODY class="content">
+<TABLE WIDTH="100%">
+  <TR>
+    <TD class="buttoncell"><A HREF="../../index.html" class="myButton"><img src="../../17-178841_home-png-home-icon-free.png" width="15" height="15" alt="Home icon"></A> | <A HREF="../index.html" class="myButton">&#9650;</A>
+      <HR>
+  </TR>
+  <TR>
+    <TD><audio id="ttsPlayback"></audio>
+      <label class="switch">
+        <input type="checkbox" id="audioSwitch" checked>
+        <span class="slider round"></span> </label>
+      <DIV class="title">The diphthongs [ai], [oi] and [au]</DIV>
+      <HR></td>
+  </TR>
+</TABLE>
+<CENTER>
+  <TABLE WIDTH=90% BORDER=5 CELLPADDING=5>
+    <TR VALIGN="TOP" ALIGN="CENTER">
+      <TD style="background-color: #eeeeff" width=33%><FONT class="LeftSound">[ai]</FONT></TD>
+      <TD style="background-color: #eeeeff" width=33%><FONT class="LeftSound">[oi]</FONT></TD>
+      <TD style="background-color: #eeeeff" width=33%><FONT class="RightSound">[au]</FONT></TD>
+    </TR>
+    <TR VALIGN="TOP" ALIGN="LEFT">
+      <TD style="background-color: #eeeeff" width=33%><B> Spelling:</B> <I>ei, ai, ey, ay</I></TD>
+      <TD style="background-color: #eeeeff" width=33%><B> Spelling:</B> <I>eu, &#x00E4u</I></TD>
+      <TD style="background-color: #eeeeff" width=33%><B> Spelling:</B> <I>au</I></TD>
+    </TR>
+    <TR VALIGN="TOP" ALIGN="LEFT">
+      <TD style="background-color: #eeeeff" width=33%><B>Pronunciation:</B> Like the vowel sound in English "mine", but more clipped and tense.</TD>
+      <TD style="background-color: #eeeeff" width=33%><B>Pronunciation:</B> Like the vowel sound in English "coin", but more clipped and tense.</TD>
+      <TD style="background-color: #eeeeff" width=33%><B>Pronunciation:</B> Like the vowel sound in English "house", but more clipped and tense.</TD>
+    </TR>
+  </TABLE>
+    <p align="center">
+    <button id="action" border=0 onClick="handleAction()"><img src="../recordaudio/microphone.jpeg" width="40" height="40" alt="Record"></button>
+    <BR>
+    Record your voice for up to 3 seconds, then you will hear it played back</p>
+  <table class="exampletable" width="90%">
+    
+      <th colspan="6" align="center" bgcolor=#eeeeff>Click on the examples below to hear them pronounced. </th>
+    <tr valign="TOP">
+      <td align="right" width=16.66% bgcolor=#eeeeff><audio id="meine" src="meine.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('meine').play();" class="MPButton">m<font class="emphasis2">ei</font>ne</button>
+        <br>
+        <audio id="Beine" src="Beine.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Beine').play();" class="MPButton">B<font class="emphasis2">ei</font>ne</button>
+        <br>
+        <audio id="Feile" src="Feile.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Feile').play();" class="MPButton">F<font class="emphasis2">ei</font>le</button>
+        <br>
+        <audio id="deine" src="deine.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('deine').play();" class="MPButton">d<font class="emphasis2">ei</font>ne</button>
+        <br>
+        <audio id="Leibe" src="Leibe.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Leibe').play();" class="MPButton">L<font class="emphasis2">ei</font>be</button>
+        <br></td>
+      <td align="left" width=16.66% bgcolor=#eeeeff><audio id="Miene" src="Miene.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Miene').play();" class="MPButton">M<font class="emphasis2">ie</font>ne</button>
+        <br>
+        <audio id="Biene" src="Biene.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Biene').play();" class="MPButton">B<font class="emphasis2">ie</font>ne</button>
+        <br>
+        <audio id="viele" src="viele.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('viele').play();" class="MPButton">v<font class="emphasis2">ie</font>le</button>
+        <br>
+        <audio id="diene" src="diene.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('diene').play();" class="MPButton">d<font class="emphasis2">ie</font>ne</button>
+        <br>
+        <audio id="Liebe" src="Liebe.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Liebe').play();" class="MPButton">L<font class="emphasis2">ie</font>be</button></td>
+      <td align="right" width=16.66% bgcolor=#eeeeff><audio id="neun" src="neun.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('neun').play();" class="MPButton">n<font class="emphasis2">eu</font>n</button>
+        <br>
+        <audio id="Haeuser" src="Haeuser.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Haeuser').play();" class="MPButton">H<font class="emphasis2">&#x00E4u</font>ser</button>
+        <br>
+        <audio id="Saeule" src="Saeule.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Saeule').play();" class="MPButton">S<font class="emphasis2">&#x00E4u</font>le</button>
+        <br>
+        <audio id="Eule" src="Eule.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Eule').play();" class="MPButton"><font class="emphasis2">Eu</font>le</button>
+        <br>
+        <audio id="Leute" src="Leute.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Leute').play();" class="MPButton">L<font class="emphasis2">eu</font>te</button>
+        <br></td>
+      <td align="left" width=16.66% bgcolor=#eeeeff><audio id="nein" src="nein.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('nein').play();" class="MPButton">n<font class="emphasis2">ei</font>n</button>
+        <br>
+        <audio id="heiser" src="heiser.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('heiser').play();" class="MPButton">h<font class="emphasis2">ei</font>ser</button>
+        <br>
+        <audio id="Seile" src="Seile.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Seile').play();" class="MPButton">S<font class="emphasis2">ei</font>le</button>
+        <br>
+        <audio id="Eile" src="Eile.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Eile').play();" class="MPButton"><font class="emphasis2">Ei</font>le</button>
+        <br>
+        <audio id="leite" src="leite.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('leite').play();" class="MPButton">l<font class="emphasis2">ei</font>te</button></td>
+      <td align="right" width=16.66% bgcolor=#eeeeff><audio id="Maus" src="Maus.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Maus').play();" class="MPButton">M<font class="emphasis2">au</font>s</button>
+        <br>
+        <audio id="Haus" src="Haus.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Haus').play();" class="MPButton">H<font class="emphasis2">au</font>s</button>
+        <br>
+        <audio id="Bauch" src="Bauch.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Bauch').play();" class="MPButton">B<font class="emphasis2">au</font>ch</button>
+        <br>
+        <audio id="Haufen" src="Haufen.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Haufen').play();" class="MPButton">H<font class="emphasis2">au</font>fen</button>
+        <br>
+        <audio id="Laute" src="Laute.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Laute').play();" class="MPButton">L<font class="emphasis2">au</font>te</button></td>
+      <td align="left" width=16.66% bgcolor=#eeeeff><audio id="Maeuse" src="Maeuse.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Maeuse').play();" class="MPButton">M<font class="emphasis2">&#x00E4u</font>se</button>
+        <br>
+        <audio id="Haeuser" src="Haeuser.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Haeuser').play();" class="MPButton">H<font class="emphasis2">&#x00E4u</font>ser</button>
+        <br>
+        <audio id="Baeuche" src="Baeuche.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Baeuche').play();" class="MPButton">B<font class="emphasis2">&#x00E4u</font>che</button>
+        <br>
+        <audio id="haeufen" src="haeufen.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('haeufen').play();" class="MPButton">h<font class="emphasis2">&#x00E4u</font>fen</button>
+        <br>
+        <audio id="Leute" src="Leute.mp3" preload="auto"></audio>
+        <button onClick="document.getElementById('Leute').play();" class="MPButton">L<font class="emphasis2">eu</font>te</button></td>
+    </tr>
+  </table>
+</CENTER>
+<BR>
+<p>
+<p>
+<DIV class="copyright">&copy; 1997 by <A HREF="mailto: ary@hollyforks.com">Gary Smith</A><BR>
+  Revised - 2023</DIV>
+</BODY>
+</HTML>

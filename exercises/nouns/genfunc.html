@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+<HEAD>
+<script src="../playsound.js"></script>
+
+<LINK rel="stylesheet" type="text/css" href="../../grammar - Copy.css">
+<TITLE>Genitive case</TITLE>
+</HEAD>
+
+<BODY class="content">
+<audio id="ttsPlayback"></audio>
+<label class="switch">
+  <input type="checkbox" id="audioSwitch" checked>
+  <span class="slider round"></span>
+</label>
+<TABLE WIDTH="100%">
+
+  <TR>
+
+		<TD class="buttoncell"><A href="../../nouns/genfuncform.htm" class="mybutton"><img src="../../page icon.png" width="25" height="25" alt="Grammar page"></A>
+    </TD>
+
+  </TR>
+
+</TABLE>
+
+<HR>
+
+
+<TABLE WIDTH="100%" border="1"><TR>
+  <TD class="title">Genitive case</TD></TR></TABLE><hr>
+   <table width="100%" border="1" cellpadding="5" cellspacing="5" class="cuecell">
+  <tr>
+    <td  class="instructioncell" border=0><p class="instructioncell">Say to whom certain articles of clothing belong.</p></td>
+    <td class="headercell"><img src="../../US flag button.png" width="48" height="48" alt="US flag"><br>
+    Click in any field below to reveal a translation.<br>
+    Click again to hide it.</td>
+    <td  class="headercell"><img src="../../German flag.jpg" width="48" height="48" alt="Germany flag"><br>
+      <span class="German">Klicken Sie auf ein Feld unten, um die richtige Antwort zu sehen.<br>
+    Klicken Sie nochmals darauf, um es zu l&ouml;schen.</span></td>
+  </tr>
+  <tr>
+  <TR><TD colspan=3>  </TD></TR>
+    <td width="50%" class="cuecell" onClick="onCueClick(this)"><div class="myDIV"><em>Das ist der Hut. (<FONT class="emphasis2">sein Kind</FONT>)</em></div></td>
+    <td>
+            <div class="myDIV">That is <span class="emphasis2">his child's</span> hat.</div>
+</td>
+      <td width="25%" class="cuecell" onClick="onCueClick(this)">
+            <div class="myDIV"><em>Das ist der Hut <FONT class="emphasis2">seines Kindes</FONT>.</em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="1"><li>
+        <div class="myDIV"><em>Das ist die Bluse. (<FONT class="emphasis2">meine Tochter</FONT>)</em></div>
+      </li>
+      </ol>
+    </td>
+    <td class="translationcell">
+            <div class="hide" id="Translation1" onClick="onTranslationClick(this)">That is <span class="emphasis2">my daughter's</span> blouse.</div>
+</td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer1" onClick="onAnswerClick(this)"><em>Das ist die Bluse <span class="emphasis2">meiner Tochter</span>.</em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="2"><li><div class="myDIV"><em>Das ist der Mantel. (<FONT class="emphasis2">seine Frau</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation2" onClick="onTranslationClick(this)">That is <span class="emphasis2">his wife's</span> coat.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer2" onClick="onAnswerClick(this)"><em>Das ist der Mantel <span class="emphasis2">seiner Frau</span>.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="3"><li><div class="myDIV"><em>Das ist die Jacke. (<FONT class="emphasis2">unser Chef</FONT>).</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation3" onClick="onTranslationClick(this)">That is <span class="emphasis2">our boss's</span> jacket</div>
+    </td>
+      <td width="8" valign="top">
+            <div class="hide" id="Answer3" onClick="onAnswerClick(this)"><em>Das ist die Jacke <span class="emphasis2">unsres Chefs</span>.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="4"><li><div class="myDIV"><em>Das sind die Schuhe. (<FONT class="emphasis2">ihr Baby</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation4" onClick="onTranslationClick(this)">Those are <span class="emphasis2">her </span>(or<span class="emphasis2"> their</span>)<span class="emphasis2"> baby's</span> shoes.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer4" onClick="onAnswerClick(this)"><em>Das sind die Schuhe <span class="emphasis2">ihres Babys</span>.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="5"><li><div class="myDIV"><em>Das ist der Regenschirm. (<FONT class="emphasis2">euer Eltern</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation5" onClick="onTranslationClick(this)">That is <span class="emphasis2">your parents'</span> umbrella.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer5" onClick="onAnswerClick(this)"><em>Das ist der Regenschirm <span class="emphasis2">eurer Eltern</span>.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="6"><li><div class="myDIV"><em>Das ist die Brille. (<FONT class="emphasis2">ihr Vater</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation6" onClick="onTranslationClick(this)">Those are <span class="emphasis2">their </span>(or<span class="emphasis2"> her</span>) <span class="emphasis2">father's</span> glasses.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer6" onClick="onAnswerClick(this)"><em>Das ist die Brille <span class="emphasis2">ihres Vaters</span>.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="7"><li><div class="myDIV"><em>Das ist die Handschuh. (<FONT class="emphasis2">meine Sekret&auml;rin</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation7" onClick="onTranslationClick(this)">That is <span class="emphasis2">my secretary's</span> glove.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer7" onClick="onAnswerClick(this)"><em>Das ist die Handschuh <span class="emphasis2">meiner Sekret&auml;rin</span>.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="8"><li><div class="myDIV"><em>Das ist das Halstuch. (<FONT class="emphasis2">das M&auml;dchen</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation8" onClick="onTranslationClick(this)">That is <span class="emphasis2">the girl's</span> neckerchief.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer8" onClick="onAnswerClick(this)"><em>Das ist das Halstuch <span class="emphasis2">des M&auml;dchens</span>.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="9"><li><div class="myDIV"><em>Das sind die Hemden. (<FONT class="emphasis2">diese G&auml;ste</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation9" onClick="onTranslationClick(this)">Those are <span class="emphasis2">these guests'</span> shirts.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer9" onClick="onAnswerClick(this)"><em>Das sind die Hemden <span class="emphasis2">dieser G&auml;ste</span>.</em></div>
+    </td>
+  </tr>
+ </table>
+</BODY>
+</HTML>

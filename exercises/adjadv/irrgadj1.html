@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+<HEAD>
+<script src="../playsound.js"></script>
+
+<LINK rel="stylesheet" type="text/css" href="../../grammar - Copy.css">
+<TITLE>Irregular adjective comparisons</TITLE>
+</HEAD>
+
+<BODY class="content">
+<audio id="ttsPlayback"></audio>
+<label class="switch">
+  <input type="checkbox" id="audioSwitch" checked>
+  <span class="slider round"></span>
+</label>
+<TABLE WIDTH="100%">
+
+  <TR>
+
+		<TD class="buttoncell"><A href="../../adjadvs/sprltv.htm" class="myButton"><img src="../../page icon.png" width="25" height="25" alt="Grammar page"></A>
+   </TD>
+
+  </TR>
+
+</TABLE>
+
+<HR>
+
+
+<TABLE WIDTH="100%" border="1"><TR>
+  <TD class="title">Irregular adjective comparisons</TD></TR></TABLE><hr>
+   <table width="100%" border="1" cellpadding="5" cellspacing="5" class="cuecell">
+  <tr>
+    <td  class="instructioncell" border=0><p class="instructioncell">Complete the comparisons.</p></td>
+    <td class="headercell"><img src="../../US flag button.png" width="48" height="48" alt="US flag"><br>
+    Click in any field below to reveal a translation.<br>
+    Click again to hide it.</td>
+    <td  class="headercell"><img src="../../German flag.jpg" width="48" height="48" alt="Germany flag"><br>
+      <span class="German">Klicken Sie auf ein Feld unten, um die richtige Antwort zu sehen.<br>
+    Klicken Sie nochmals darauf, um es zu l&ouml;schen.</span></td>
+  </tr>
+  <tr>
+  <TR><TD colspan=3>  </TD></TR>
+    <td width="50%" class="cuecell" onClick="onCueClick(this)"><div class="myDIV"><em>Jens spricht Englisch <span class="emphasis2">gut</span>. <BR>
+Alex spricht Englisch <span class="emphasis2">besser</span>.<BR>
+Heinz spricht Englisch <span class="emphasis2">am besten</span>.</em></div></td>
+    <td>
+            <div class="myDIV">Jens speaks English <span class="emphasis2">well</span>.<BR>
+      Alex speaks English <span class="emphasis2">better</span>.<BR>
+      Heinz speaks English <span class="emphasis2">best</span>.</div>
+</td>
+      <td width="25%" class="cuecell" onClick="onCueClick(this)">
+            <div class="myDIV"><em></em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="1"><li>
+        <div class="myDIV"><em>Ein Drachen fliegt <font class="emphasis2">hoch</font>.<br>
+          Ein Hubschrauber fliegt <span class="emphasis2">&nbsp;<u>______</u></span><u>&nbsp;</u>.<br>
+Eine D&uuml;senmaschine fliegt.&nbsp;<u><span class="emphasis2">&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></u><span class="emphasis2"></span> </em></div>
+      </li>
+      </ol>
+    </td>
+    <td class="translationcell">
+            <div class="hide" id="Translation1" onClick="onTranslationClick(this)">            A kite flies <span class="emphasis2">high</span>.<br>
+            A helicopter flies <span class="emphasis2">higher</span>.<br>
+            A jet plane flies <span class="emphasis2">highest</span>.</div>
+</td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer1" onClick="onAnswerClick(this)"><em>Ein Drachen fliegt <font class="emphasis2">hoch</font>.
+            <br>
+              Ein Hubschrauber fliegt <span class="emphasis2">h&ouml;her</span>.<br>
+            Eine D&uuml;senmaschine fliegt <span class="emphasis2">am h&ouml;chsten</span>.</em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="2"><li><div class="myDIV"><em>Ich laufe <font class=emphasis2>gern</font>.<br>
+        Ich fahre Ski <span class="emphasis2"><u>______</u></span>.<br>
+Ich spiele Tennis&nbsp;&nbsp;<u><span class="emphasis2">&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></u></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation2" onClick="onTranslationClick(this)">
+<p>I <span class="emphasis2">like</span> to run.<br>
+          I <span class="emphasis2">like better</span> to go skiing.<br>
+          I <span class="emphasis2">like best</span> to play tennis.</p>
+</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer2" onClick="onAnswerClick(this)"><em>Ich laufe <font class=emphasis2>gern</font>.<br>
+              Ich fahre Ski <span class="emphasis2">lieber</span>.<br>
+            Ich spiele Tennis <span class="emphasis2">am liebsten</span>.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="3"><li><div class="myDIV"><em>Die Studenten schreiben <font class=emphasis2>viel</font>.<br>
+        Sie lesen <span class="emphasis2"><u>______</u></span>.<br>
+Sie schlafen&nbsp;<u><span class="emphasis2">&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></u></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation3" onClick="onTranslationClick(this)">The students write <span class="emphasis2">a lot</span>.<br>
+            They read <span class="emphasis2">more</span>.<br>
+            They sleep <span class="emphasis2">most</span>.</div>
+    </td>
+      <td width="8" valign="top">
+            <div class="hide" id="Answer3" onClick="onAnswerClick(this)"><em>Die Studenten schreiben <font class=emphasis2>viel</font>.<br>
+              Sie lesen <span class="emphasis2">mehr</span>.<br>
+            Sie schlafen <span class="emphasis2">am meisten</span>|</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="4"><li><div class="myDIV"><em>Baltimore ist <font class=emphasis2>nahe</font>.<br>
+        Richmond ist <span class="emphasis2"><u>______</u></span>.<br>
+        Norfolk ist&nbsp;<u><span class="emphasis2">&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></u></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation4" onClick="onTranslationClick(this)">Baltimore is <span class="emphasis2">close</span>.<br>
+            Richmond is <span class="emphasis2">closer</span>.<br>
+            Norfolk is <span class="emphasis2">closest</span>.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer4" onClick="onAnswerClick(this)"><em>Baltimore ist <font class=emphasis2>nahe</font>.<br>
+            Richmond ist <span class="emphasis2">n&auml;her</span>.<br>
+            Norfolk ist <span class="emphasis2">am n&auml;chsten</span>.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="5"><li><div class="myDIV"><em>Die USA sind <font class=emphasis2>gross</font>.<br>
+Die Sowjetunion ist <span class="emphasis2"><u>______</u></span>.<br>
+China ist&nbsp;<u><span class="emphasis2">&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></u></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation5" onClick="onTranslationClick(this)">The USA is <span class="emphasis2">large</span>.<br>
+            The Soviet Union is <span class="emphasis2">larger</span>.<br>
+            China is <span class="emphasis2">largest</span>.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer5" onClick="onAnswerClick(this)"><em>Die USA sind <font class=emphasis2>gross</font>. <br>
+            Die Sowjetunion ist <span class="emphasis2">gr&ouml;sser</span>.<br>
+            China ist <span class="emphasis2">am gr&ouml;ssten</span>.</em></div>
+    </td>
+  </tr>
+ </table>
+</BODY>
+</HTML>

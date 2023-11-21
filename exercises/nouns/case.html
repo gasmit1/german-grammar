@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+<HEAD>
+<script src="../playsound.js"></script>
+
+<LINK rel="stylesheet" type="text/css" href="../../grammar - Copy.css">
+<TITLE>Case</TITLE>
+</HEAD>
+
+<BODY class="content">
+<audio id="ttsPlayback"></audio>
+<label class="switch">
+  <input type="checkbox" id="audioSwitch" checked>
+  <span class="slider round"></span>
+</label>
+<TABLE WIDTH="100%">
+
+  <TR>
+
+		<TD class="buttoncell"><A href="../../nouns/case.htm" class="mybutton"><img src="../../page icon.png" width="25" height="25" alt="Grammar page"></A>
+    </TD>
+
+  </TR>
+
+</TABLE>
+
+<HR>
+
+
+<TABLE WIDTH="100%" border="1"><TR>
+  <TD class="title">Case</TD></TR></TABLE><hr>
+   <table width="100%" border="1" cellpadding="5" cellspacing="5" class="cuecell">
+  <tr>
+    <td  class="instructioncell" border=0><p class="instructioncell">Answer the questions with the proper form of <em>der Professor</em>.</p></td>
+    <td class="headercell"><img src="../../US flag button.png" width="48" height="48" alt="US flag"><br>
+    Click in any field below to reveal a translation.<br>
+    Click again to hide it.</td>
+    <td  class="headercell"><img src="../../German flag.jpg" width="48" height="48" alt="Germany flag"><br>
+      <span class="German">Klicken Sie auf ein Feld unten, um die richtige Antwort zu sehen.<br>
+    Klicken Sie nochmals darauf, um es zu l&ouml;schen.</span></td>
+  </tr>
+  <tr>
+  <TR><TD colspan=3>  </TD></TR>
+    <td width="50%" class="cuecell" onClick="onCueClick(this)"><div class="myDIV"><em><span class="emphasis2">Wer</span> ist das?</em></div></td>
+    <td>
+            <div class="myDIV">
+<p>Who is that?<br>
+          That is <span class="emphasis2">the</span> professor. </p>
+</div>
+</td>
+      <td width="25%" class="cuecell" onClick="onCueClick(this)">
+            <div class="myDIV"><em>Das ist <span class="emphasis2">der</span> Professor.</em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="1"><li>
+        <div class="myDIV"><em>Mit <span class="emphasis2">wem</span> sprechen Sie?</em></div>
+      </li>
+      </ol>
+    </td>
+    <td class="translationcell">
+            <div class="hide" id="Translation1" onClick="onTranslationClick(this)">
+<p>With <span class="emphasis2">whom</span> are you talking?<br>
+          I am talking with <span class="emphasis2">the</span> professor. </p>
+</div>
+</td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer1" onClick="onAnswerClick(this)"><em>Ich spreche mit <span class="emphasis2">dem</span> Professor.</em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="2"><li><div class="myDIV"><em><span class="emphasis2">Wessen</span> Mantel ist das?</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation2" onClick="onTranslationClick(this)">
+<p><span class="emphasis2">Whose</span> coat is that?<br>
+          That is <span class="emphasis2">the</span> professor<span class="emphasis2">'s</span> coat.</p>
+</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer2" onClick="onAnswerClick(this)"><em>Das ist der Mantel <span class="emphasis2">des</span> Professor<span class="emphasis2">s</span>.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="3"><li><div class="myDIV"><em><span class="emphasis2">Wessen</span> B&uuml;ro suchen Sie?</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation3" onClick="onTranslationClick(this)"><span class="emphasis2">Whose</span> office are you looking for?<br>
+            I am looking for <span class="emphasis2">the</span> professor<span class="emphasis2">'s</span> office.</div>
+    </td>
+      <td width="8" valign="top">
+            <div class="hide" id="Answer3" onClick="onAnswerClick(this)"><em> Ich suche das B&uuml;ro <span class="emphasis2">des</span> Professor<span class="emphasis2">s</span>.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="4"><li><div class="myDIV"><em><span class="emphasis2">Wen</span> sehen Sie?</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation4" onClick="onTranslationClick(this)">
+<p><span class="emphasis2">Whom</span> do you see?<br>
+          I see <span class="emphasis2">the</span> professor.</p>
+</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer4" onClick="onAnswerClick(this)"><em>Ich sehe <span class="emphasis2">den</span> Professor.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="5"><li><div class="myDIV"><em>F&uuml;r <span class="emphasis2">wen</span> arbeiten Sie?</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation5" onClick="onTranslationClick(this)">For <span class="emphasis2">whom</span> do you work?</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer5" onClick="onAnswerClick(this)"><em> I work for <span class="emphasis2">the</span> professor.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="6"><li><div class="myDIV"><em><span class="emphasis2">Wem</span> geben Sie das Heft?</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation6" onClick="onTranslationClick(this)">To <span class="emphasis2">whom</span> are you giving the notebook?<br>
+            I am giving the notebook to <span class="emphasis2">the</span> professor.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer6" onClick="onAnswerClick(this)"><em> Ich gebe <span class="emphasis2">dem</span> Professor das Heft.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="7"><li><div class="myDIV"><em><span class="emphasis2">Wer</span> gibt die Klausur?</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation7" onClick="onTranslationClick(this)"><span class="emphasis2">Who</span> is giving the test?<br>
+            <span class="emphasis2">The</span> professor is giving the test.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer7" onClick="onAnswerClick(this)"><em> <span class="emphasis2">Der</span> Professor gibt die Klausur.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="8"><li><div class="myDIV"><em><span class="emphasis2">Wer</span> sagt das?</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation8" onClick="onTranslationClick(this)"><span class="emphasis2">Who</span> says that?<br>
+            <span class="emphasis2">The</span> professor says that.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer8" onClick="onAnswerClick(this)"><em><span class="emphasis2">Der</span> Professor sagt das.</em></div>
+    </td>
+  </tr>
+ </table>
+</BODY>
+</HTML>

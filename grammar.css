@@ -1,0 +1,218 @@
+UL.nobullet {
+
+	list-style-type : none;
+
+}
+
+BODY {
+	background-image : url(concrete.jpg);
+	font-size : 18px;
+	font-family : "Times New Roman", Times, serif;
+	background-color: #FFF;
+	width: auto;
+	text-align: left;
+	margin-left: 100px;
+	background-repeat: repeat;
+	margin-right: 100px;
+	margin-top: 50px;
+
+}
+
+.content {
+	max-width: 600px;
+	margin: auto;
+}
+
+.title {
+	color : #990000;
+	font-size : 36pt;
+	font-weight : bold;
+	border : none;
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+}
+
+.copyright {
+	text-align : right;
+	font-size : smaller;
+	font-weight : bold;
+
+}
+
+
+
+TD.buttoncell {
+
+	font-size : medium;
+
+	font-weight : bold;
+
+	text-align : center;
+
+	width : 33%;
+
+}
+
+
+
+A {
+	color : Navy;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+
+}
+
+a:hover {
+	background-color: yellow;
+	font-weight: bold;
+}
+
+.exampletable {
+
+	text-align : center;
+
+	vertical-align : top;
+
+	border : medium inset White;
+
+	background-color : Silver;
+
+	width : auto;
+
+	font-family : Arial, Helvetica, sans-serif;
+
+}
+
+
+
+.explanationtable {
+	text-align : center;
+	vertical-align : top;
+	background-color : transparent;
+	width : 1200px;
+	font-family : Arial, Helvetica, sans-serif;
+	border : thin solid Gray;
+}
+
+
+
+.examplecell {
+
+	border : thin;
+
+	border-style : groove;
+
+	padding : 10px;
+
+	width: auto;
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	background-color: #DADADA;
+
+}
+
+
+
+.emphasis1 {
+	color : #960;
+	font-weight: bold;
+	font-size: 18pt;
+}
+
+
+
+.emphasis2 {
+	color : #F00;
+	font-weight: bold;
+	font-size: 18pt;
+
+}
+
+
+
+.emphasis3 {
+	color : #699;
+	font-weight: bold;
+	font-size: 18pt;
+
+}
+
+
+
+.emphasis4 {
+	color : #0000ff;
+	font-weight: bold;
+	font-size: 18pt;
+
+}
+
+
+
+.German {
+
+	font-style : normal;
+
+}
+
+
+
+.English {
+
+	color: #333333;
+
+	font-style: italic;
+
+}
+
+
+
+TH.leftheader {
+	text-align : right;
+	vertical-align : middle;
+	font-family : "Times New Roman", Times, serif;
+	font-weight : bold;
+
+}
+
+
+
+TH.topheader {
+
+	text-align : center;
+
+	vertical-align : middle;
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-weight : bold;
+
+}
+
+
+
+TH.verbheader {
+
+	text-align : center;
+
+	vertical-align : middle;
+
+	font-family : Arial, Helvetica, sans-serif;
+
+	font-weight : bold;
+
+	background-color : Silver;
+
+	border : double;
+
+}
+
+ol {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+}
+
+ul {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+}

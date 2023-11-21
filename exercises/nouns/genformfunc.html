@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+<HEAD>
+<script src="../playsound.js"></script>
+
+<LINK rel="stylesheet" type="text/css" href="../../grammar - Copy.css">
+<TITLE>Genitive Case</TITLE>
+</HEAD>
+
+<BODY class="content">
+<audio id="ttsPlayback"></audio>
+<label class="switch">
+  <input type="checkbox" id="audioSwitch" checked>
+  <span class="slider round"></span>
+</label>
+<TABLE WIDTH="100%">
+
+  <TR>
+
+		<TD class="buttoncell"><A href="../../nouns/genfuncform.htm" class="mybutton"><img src="../../page icon.png" width="25" height="25" alt="Grammar page"></A>
+    </TD>
+
+  </TR>
+
+</TABLE>
+
+<HR>
+
+
+<TABLE WIDTH="100%" border="1"><TR>
+  <TD class="title">Genitive Case</TD></TR></TABLE><hr>
+   <table width="100%" border="1" cellpadding="5" cellspacing="5" class="cuecell">
+  <tr>
+    <td  class="instructioncell" border=0><p class="instructioncell">Say whose things you like.</p></td>
+    <td class="headercell"><img src="../../US flag button.png" width="48" height="48" alt="US flag"><br>
+    Click in any field below to reveal a translation.<br>
+    Click again to hide it.</td>
+    <td  class="headercell"><img src="../../German flag.jpg" width="48" height="48" alt="Germany flag"><br>
+      <span class="German">Klicken Sie auf ein Feld unten, um die richtige Antwort zu sehen.<br>
+    Klicken Sie nochmals darauf, um es zu l&ouml;schen.</span></td>
+  </tr>
+  <tr>
+  <TR><TD colspan=3>  </TD></TR>
+    <td width="50%" class="cuecell" onClick="onCueClick(this)"><div class="myDIV"><em>Der Garten gef&auml;llt mir.   (<FONT class="emphasis2">meine Nachbarn</FONT>)<br>
+    </em></div></td>
+    <td>
+            <div class="myDIV">I like <span class="emphasis2">my neighbors'</span> garden.</div>
+</td>
+      <td width="25%" class="cuecell" onClick="onCueClick(this)">
+            <div class="myDIV"><em>Der Garten <FONT class="emphasis2">meiner Nachbarn</FONT> gef&auml;llt mir.<br>
+            </em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="1"><li>
+        <div class="myDIV"><em>Das Haus  gef&auml;llt mir. (<span class="emphasis2">Ihr Professor</span>)</em></div>
+      </li>
+      </ol>
+    </td>
+    <td class="translationcell">
+            <div class="hide" id="Translation1" onClick="onTranslationClick(this)">I like <span class="emphasis2">your professor's</span> house.</div>
+</td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer1" onClick="onAnswerClick(this)"><em>Das Haus <span class="emphasis2">Ihres Professors</span> gef&auml;llt mir.</em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="2"><li><div class="myDIV"><em>Das Auto gef&auml;llt mir.  (<FONT class="emphasis2">diese Studentin</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation2" onClick="onTranslationClick(this)">I like <span class="emphasis2">this student's</span> car.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer2" onClick="onAnswerClick(this)"><em>Das Auto <span class="emphasis2">dieser Studentin</span> gef&auml;llt mir.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="3"><li><div class="myDIV"><em>Der Teppich gef&auml;llt mir. (<FONT class="emphasis2">meine Tante</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation3" onClick="onTranslationClick(this)">I like <span class="emphasis2">my aunt's</span> carpet.</div>
+    </td>
+      <td width="8" valign="top">
+            <div class="hide" id="Answer3" onClick="onAnswerClick(this)"><em>Der Teppich <span class="emphasis2">meiner Tante</span> gef&auml;llt mir.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="4"><li><div class="myDIV"><em>Die Stereoanlagegef&auml;llt mir.  (<span class="emphasis2">dein Freund</span>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation4" onClick="onTranslationClick(this)">I like <span class="emphasis2">your friend's</span> stereo set.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer4" onClick="onAnswerClick(this)"><em>Die Stereoanlage <span class="emphasis2">deines Freundes</span> gef&auml;llt mir.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="5"><li><div class="myDIV"><em>Die Briefmarkensammlung gef&auml;llt mir.  (<span class="emphasis2">unser Lehrer</span>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation5" onClick="onTranslationClick(this)">I like <span class="emphasis2">our teacher's</span> stamp collection.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer5" onClick="onAnswerClick(this)"><em>Die Briefmarkensammlung <span class="emphasis2">unsres Lehrers</span> gef&auml;llt mir.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="6"><li><div class="myDIV"><em>Der Computer gef&auml;llt mir. (<FONT class="emphasis2">deine Zimmerkollegin</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation6" onClick="onTranslationClick(this)">I like <span class="emphasis2">your roommate's</span> computer</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer6" onClick="onAnswerClick(this)"><em>Der Computer <span class="emphasis2">deiner Zimmerkollegin</span> gef&auml;llt mir.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="7"><li><div class="myDIV"><em>Der Fernsehapparatgef&auml;llt mir. (<FONT class="emphasis2">mein Bruder</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation7" onClick="onTranslationClick(this)">I like <span class="emphasis2">my brother's</span> television set.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer7" onClick="onAnswerClick(this)"><em>Der Fernsehapparat <span class="emphasis2">meines Bruders</span> gef&auml;llt mir.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="8"><li><div class="myDIV"><em>Das B&uuml;ro gef&auml;llt mir. (<FONT class="emphasis2">der Chef</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation8" onClick="onTranslationClick(this)">I like <span class="emphasis2">the boss's</span> office.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer8" onClick="onAnswerClick(this)"><em>Das B&uuml;ro <span class="emphasis2">des Chefs</span> gef&auml;llt mir.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="9"><li><div class="myDIV"><em>Die Motorr&auml;der gefallen mir. (<FONT class="emphasis2">diese Teenager</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation9" onClick="onTranslationClick(this)">I like <span class="emphasis2">these teenagers'</span> motorcycles.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer9" onClick="onAnswerClick(this)"><em>Die Motorr&auml;der <FONT class="emphasis2">dieser Teenager</FONT>gefallen mir.</em></div>
+    </td>
+  </tr>
+ </table>
+</BODY>
+</HTML>

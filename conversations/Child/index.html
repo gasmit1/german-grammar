@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Checked up to Lina6 -->
+<HTML>
+<HEAD>
+<LINK rel="stylesheet" type="text/css" href="../../grammar - Copy.css">
+<TITLE>Conversation with a child</TITLE>
+</HEAD>
+
+<BODY class="content">
+<audio id="ttsPlayback"></audio>
+<label class="switch">
+  <input type="checkbox" id="audioSwitch" checked>
+  <span class="slider round"></span> </label>
+<TABLE WIDTH="100%">
+  <TR>
+    <TD class="buttoncell"><button class="mybutton">
+      <A HREF="../index.html">&#9650;</A>
+      </button></TD>
+  </TR>
+</TABLE>
+<HR>
+<TABLE WIDTH="100%" border="1">
+  <TR>
+    <TD class="title">Conversation with a child</TD>
+  </TR>
+</TABLE>
+<hr>
+<table width="100%" border="1" cellpadding="5" cellspacing="5" class="cuecell">
+  <tr>
+    <td width="7%"  class="headercell">&nbsp;</td>
+    <td width="39%"  class="headercell"><img src="../../German flag.jpg" width="48" height="48" alt="Germany flag"><br>
+      <span class="German">Instruction</span></td>
+    <td width="9%"  class="headercell">&nbsp;</td>
+    <td width="45%"  class="headercell"><img src="../../US flag button.png" width="48" height="48" alt="US flag"><br>
+      English translation</td>
+  </tr>
+  <TR>
+    <TD colspan=4></TD>
+  </TR>
+  
+  <!---------------- First German name  -->
+  <tr>
+    <td valign="top"><span class="speaker"><em>Erwachsener:</em></span></td>
+    <td valign="top" class="German"><div align="right" class="speaker"></div>
+      
+      <!---------------- First German utterance  -->
+      
+      <audio id="Moritz1" src="Moritz1.mp3" preload="auto"></audio>
+      <div id="Moritz1" onClick="document.getElementById('Moritz1').play();">Hallo! Wie geht es dir heute? </div></td>
+    <td class="translationcell"><span class="speaker"><em>Adult:</em></span></td>
+    <td class="English"><div align="right" class="speaker"></div>
+      <div id="Translation1" onClick="onTranslationClick(this)">Hello! How are you today? </div></td>
+  </tr>
+  
+  <!---------------- Second German name  -->
+  <tr>
+    <td valign="top"><span class="speaker"><em>Kind:</em></span></td>
+    <td valign="top" class="German"><div align="right" class="speaker"></div>
+      
+      <!---------------- Second German utterance  -->
+      
+      <audio id="Lina1" src="Lina1.mp3" preload="auto"></audio>
+      <div id="Lina1" onClick="document.getElementById('Lina1').play();">Hallo! Mir geht es gut. Ich habe heute frei von der Schule. </div></td>
+    <td class="translationcell"><span class="speaker"><em><span class="speaker"><em>Child</em></span>:</em></span></td>
+    <td class="English"><div align="right" class="speaker"></div>
+      <div id="Translation1" onClick="onTranslationClick(this)">Hello! I'm doing well. I'm free from school today. </div></td>
+  </tr>
+  <!---------------- Third German name  -->
+  <tr>
+    <td valign="top"><span class="speaker"><em> Erwachsener:</em></span></td>
+    <!---------------- Third German utterance  -->
+    <td class="German"><audio id="Moritz2" src="Moritz2.mp3" preload="auto"></audio>
+      <div id="Moritz2" onClick="document.getElementById('Moritz2').play();">Das klingt toll! Was hast du vor heute? </div></td>
+    <td><span class="translationcell"><span class="speaker"><em><span class="translationcell"><span class="speaker"><em>Adult</em></span></span>:</em></span></span></td>
+    <td class="English"><div align="right" class="speaker"></div>
+      <div id="Translation2" onClick="onTranslationClick(this)">That sounds great! What are you doing today? </div></td>
+  </tr>
+  <!---------------- Fourth German name  -->
+  <tr>
+    <td valign="top"><span class="speaker"><em><span class="speaker"><em>Kind</em></span>:</em></span></td>
+    <!---------------- Fourth German utterance  -->
+    <td valign="top" class="German"><audio id="Lina2" src="Lina2.mp3" preload="auto"></audio>
+      <div id="Lina2" onClick="document.getElementById('Lina2').play();">Ich w&uuml;rde gerne ins Kino gehen. Gibt es einen neuen Zeichentrickfilm, der l&auml;uft? </div></td>
+    <td><span class="speaker"><em><span class="speaker"><em>Child</em></span>:</em></span></td>
+    <td class="English"><div align="right" class="speaker"></div>
+      <div id="Translation3" onClick="onTranslationClick(this)">I would like to go to the movies. Is there a new cartoon showing? </div></td>
+  </tr>
+  <!---------------- Fifth German name  -->
+  <tr>
+    <td valign="top"><span class="speaker"><em><span class="speaker"><em>Erwachsener</em></span>:</em></span></td>
+    <!---------------- Fifth German utterance  -->
+    <td class="German"><audio id="Moritz3" src="Moritz3.mp3" preload="auto"></audio>
+      <div id="Moritz3" onClick="document.getElementById('Moritz3').play();">Ja, es gibt einen neuen Film mit lustigen Tieren. M&ouml;chtest du den sehen?</div></td>
+    <td><span class="translationcell"><span class="speaker"><em><span class="translationcell"><span class="speaker"><em>Adult</em></span></span>:</em></span></span></td>
+    <td class="English"><div align="right" class="speaker"></div>
+      <div id="Translation4" onClick="onTranslationClick(this)">Yes, there is a new movie with funny animals. Would you like to see it? </div></td>
+  </tr>
+  <!---------------- Sixth German name  -->
+  <tr>
+    <td valign="top"><span class="speaker"><em><span class="speaker"><em>Kind</em></span>:</em></span></td>
+    <!---------------- Sixth German utterance  -->
+    <td valign="top" class="German"><div align="right" class="speaker"></div>
+      <audio id="Lina3" src="Lina3.mp3" preload="auto"></audio>
+      <div id="Lina3" onClick="document.getElementById('Lina3').play();"> Ja, das klingt lustig! Kannst du mir helfen, die Tickets zu kaufen? </div></td>
+    <td><span class="speaker"><em><span class="speaker"><em>Child</em></span>:</em></span></td>
+    <td class="English"><div align="right" class="speaker"></div>
+      <div id="Translation5" onClick="onTranslationClick(this)">Yes, that sounds fun! Can you help me buy the tickets? </div></td>
+  </tr>
+  <!---------------- Seventh German name  -->
+  <tr>
+    <td valign="top""><span class="speaker"><em><span class="speaker"><em>Erwachsener</em></span>:</em></span></td>
+    <!---------------- Seventh German utterance  -->
+    <td class="German"><div align="right" class="speaker"></div>
+      <audio id="Moritz4" src="Moritz4.mp3" preload="auto"></audio>
+      <div id="Moritz4" onClick="document.getElementById('Moritz4').play();"> Nat&uuml;rlich kann ich das machen. Wie viele Tickets brauchen wir? </div></td>
+    <td><span class="translationcell"><span class="speaker"><em><span class="translationcell"><span class="speaker"><em>Adult</em></span></span>:</em></span></span></td>
+    <td class="English"><div align="right" class="speaker"></div>
+      <div id="Translation6" onClick="onTranslationClick(this)">Of course I can do that. How many tickets do we need? </div></td>
+  </tr>
+  <!---------------- Eighth German name  -->
+  <tr>
+    <td valign="top"><span class="speaker"><em><span class="speaker"><em>Kind</em></span>:</em></span></td>
+    <!---------------- Eighth German utterance  -->
+    <td valign="top" class="German"><audio id="Lina4" src="Lina4.mp3" preload="auto"></audio>
+      <div id="Lina4" onClick="document.getElementById('Lina4').play();">Ich m&ouml;chte gerne zwei Tickets, bitte. </div></td>
+    <td><span class="speaker"><em><span class="speaker"><em>Child</em></span>:</em></span></td>
+    <td class="English"><div align="right" class="speaker"></div>
+      <div id="Translation7" onClick="onTranslationClick(this)">I would like two tickets, please. </div></td>
+  </tr>
+  <!---------------- Ninth German name  -->
+  <tr>
+    <td valign="top"><span class="speaker"><em><span class="speaker"><em>Erwachsener</em></span>:</em></span></td>
+    <!---------------- Ninth German utterance  -->
+    <td class="German"><div align="right" class="speaker"></div>
+      <audio id="Moritz5" src="Moritz5.mp3" preload="auto"></audio>
+      <div id="Moritz5" onClick="document.getElementById('Moritz5').play();">In Ordnung. Welche Uhrzeit m&ouml;chtest du den Film sehen? </div></td>
+    <td><span class="translationcell"><span class="speaker"><em><span class="translationcell"><span class="speaker"><em>Adult</em></span></span>:</em></span></span></td>
+    <td class="English"><div align="right" class="speaker"></div>
+      <div id="Translation8" onClick="onTranslationClick(this)">All right. What time would you like to see the film? </div></td>
+  </tr>
+  <!---------------- Tenth German name  -->
+  <tr>
+    <td valign="top"><span class="speaker"><em><span class="speaker"><em>Kind</em></span>:</em></span></td>
+    <!---------------- Tenth German utterance  -->
+    <td valign="top" class="German"><div align="right" class="speaker"></div>
+      <audio id="Lina5" src="Lina5.mp3" preload="auto"></audio>
+      <div id="Lina5" onClick="document.getElementById('Lina5').play();">Um 15 Uhr w&auml;re perfekt! </div></td>
+    <td><span class="speaker"><em><span class="speaker"><em>Child</em></span>:</em></span></td>
+    <td class="English"><div align="right" class="speaker"></div>
+      <div id="Translation9" onClick="onTranslationClick(this)">At 3 p.m. would be perfect! </div></td>
+  </tr>
+  <!---------------- Eleventh German name  -->
+  <tr>
+    <td valign="top"><span class="speaker"><em><span class="speaker"><em>Erwachsener</em></span>:</em></span></td>
+    <!---------------- Eleventh German utterance  -->
+    <td valign="top" class="German"><div align="right" class="speaker"></div>
+      <audio id="Moritz6" src="Moritz6.mp3" preload="auto"></audio>
+      <div id="Moritz6" onClick="document.getElementById('Moritz6').play();">Gut, ich werde die Tickets f&uuml;r die Vorstellung um 15 Uhr besorgen. Hast du noch andere W&uuml;nsche f&uuml;r heute? </div></td>
+    <td><span class="translationcell"><span class="speaker"><em><span class="translationcell"><span class="speaker"><em>Adult</em></span></span>:</em></span></span></td>
+    <td class="English"><div align="right" class="speaker"></div>
+      <div id="Translation10" onClick="onTranslationClick(this)">OK, I'll get the tickets for the 3 p.m. show. Do you have any other wishes for today? </div></td>
+  </tr>
+  <!---------------- Twelth German name  -->
+  <tr>
+    <td valign="top"><span class="speaker"><em><span class="speaker"><em>Kind</em></span>:</em></span></td>
+    <!---------------- Twelth German utterance  -->
+    <td valign="top" class="German"><audio id="Lina6" src="Lina6.mp3" preload="auto"></audio>
+      <div id="Lina6" onClick="document.getElementById('Lina6').play();">Kann ich nach dem Kino ein Eis bekommen? </div></td>
+    <td><span class="speaker"><em><span class="speaker"><em>Child</em></span>:</em></span></td>
+    <td class="English">Can I get some ice cream after the movie? </td>
+  </tr>
+  <!---------------- Thirteenth German name  -->
+  <tr>
+    <td valign="top"><span class="speaker"><em><span class="speaker"><em>Erwachsener</em></span>:</em></span></td>
+    <!---------------- Thirteenth German utterance  -->
+    <td valign="top" class="German"><audio id="Moritz7" src="Moritz7.mp3" preload="auto"></audio>
+      <div id="Moritz7" onClick="document.getElementById('Moritz7').play();">Nat&uuml;rlich! Nach dem Film k&ouml;nnen wir zur Eisdiele gehen und du kannst dir ein leckeres Eis aussuchen. </div></td>
+    <td><span class="translationcell"><span class="speaker"><em><span class="translationcell"><span class="speaker"><em>Adult</em></span></span>:</em></span></span></td>
+    <td class="English">Of course! After the film we can go to the ice cream parlor and you can choose a delicious ice cream. </td>
+  </tr>
+  <!---------------- Fourteenth German name  -->
+  <tr>
+    <td valign="top"><span class="speaker"><em><span class="speaker"><em>Kind</em></span>:</em></span></td>
+    <!---------------- Fourteenth German utterance  -->
+    <td valign="top" class="German"><audio id="Lina7" src="Lina7.mp3" preload="auto"></audio>
+      <div id="Lina7" onClick="document.getElementById('Lina7').play();">Das ist super! Danke, dass du mit mir ins Kino gehst. </div></td>
+    <td><span class="speaker"><em><span class="speaker"><em>Child</em></span>:</em></span></td>
+    <td class="English">That's great! Thank you for going to the movie with me. </td>
+  </tr>
+  <!---------------- Fifteenth German name  -->
+  <tr>
+    <td valign="top"><span class="speaker"><em><span class="speaker"><em>Erwachsener</em></span>:</em></span></td>
+    <!---------------- Fifteenth German utterance  -->
+    <td valign="top" class="German"><audio id="Moritz8" src="Moritz8.mp3" preload="auto"></audio>
+      <div id="Moritz8" onClick="document.getElementById('Moritz8').play();">Es ist mir eine Freude, Zeit mit dir zu verbringen. Wir werden eine tolle Zeit haben! </div></td>
+    <td><span class="translationcell"><span class="speaker"><em><span class="translationcell"><span class="speaker"><em>Adult</em></span></span>:</em></span></span></td>
+    <td class="English">It's a pleasure to spend time with you. We're going to have a great time! </td>
+  </tr>
+  <!---------------- Sixteenth German name  -->
+  <tr>
+    <td valign="top"><span class="speaker"><em><span class="speaker"><em>Kind</em></span>:</em></span></td>
+    <!---------------- Sixteenth German utterance  -->
+    <td valign="top" class="German"><audio id="Lina8" src="Lina8.mp3" preload="auto"></audio>
+      <div id="Lina8" onClick="document.getElementById('Lina8').play();">Ich freue mich schon darauf!</div></td>
+    <td><span class="speaker"><em><span class="speaker"><em>Child</em></span>:</em></span></td>
+    <td class="English">I'm looking forward to it!</td>
+  </tr>
+</table>
+</BODY>
+</HTML>

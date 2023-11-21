@@ -1,0 +1,388 @@
+BODY {
+	background-image : url(concrete.jpg);
+	font-size : 18px;
+	font-family : "Times New Roman", Times, serif;
+	width: auto;
+	margin-left: 100px;
+	background-repeat: repeat;
+	margin-right: 100px;
+	margin-top: 50px;
+
+}
+
+.title {
+	color : #990000;
+	font-size : 36pt;
+	font-weight : bold;
+	border : none;
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+}
+
+.subtitle {
+	color : #960;
+	font-size : 24pt;
+	font-weight : bold;
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.subsubtitle {
+	color : #960;
+	font-size : 14pt;
+	font-weight : bold;
+	border : none;
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+}
+
+.content {
+	max-width: 1200px;
+	margin: auto;
+	padding-top: 10px;
+}
+
+.copyright{
+	text-align:right;
+	font-size:smaller;
+	font-weight:bold;
+}
+
+.buttoncell{
+	font-size:medium;
+	font-weight:bolder;
+	text-align:center;
+	width:33%;
+}
+
+.emphasis1 {
+	color : #960;
+	font-weight: bold;
+}
+
+font:emphasis2 {
+	color : #F00;
+	font-weight: bold;
+}
+
+.emphasis2 {
+	color : #F00;
+	font-weight: bold;
+}
+
+.emphasis3 {
+	color : #090;
+	font-weight: bold;
+}
+
+.emphasis4 {
+	color : #0000ff;
+	font-weight: bold;
+}
+
+.explanationtable {
+	text-align : center;
+	vertical-align : top;
+	background-color : transparent;
+	font-family : Arial, Helvetica, sans-serif;
+	border : thin solid #000;
+	cellpadding: 20px;
+}
+
+.exampletable {
+	text-align : center;
+	vertical-align : top;
+	background-color : transparent;
+	font-family : Arial, Helvetica, sans-serif;
+/*	border : thin solid #000; */
+	cellpadding: 30px;
+}
+
+.examplecell {
+	padding : 10px;
+	width: auto;
+	font-family : Arial, Helvetica, sans-serif;
+	background-color: #FFC;
+	color: #000;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+.cuecell {
+	background-color: #FFC;
+	cursor:pointer;
+	vertical-align: top;
+}
+
+.translationcell {
+	background-color: #FFC;
+	vertical-align:top;
+}
+
+.answercell {
+	background-color: #FFC;
+	font-style : italic;
+	cursor:pointer;
+}
+
+.German {
+	font-style : italic;
+}
+
+.English {
+	font-style: normal;
+}
+
+.MPButton {
+	border:0;
+	cursor:pointer;
+	text-align:center;
+	font-size:18px;
+	font-style: italic;
+}
+
+.myButton {
+	box-shadow: 1px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color:#eae0c2;
+	border-radius:15px;
+	border:2px solid #dba11b;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:12px 16px;
+	text-decoration:none;
+	text-shadow:1px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#ccc2a6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/*.playbutton	{
+	position: fixed;
+	top: 20;
+	right: 20;
+}*/
+
+hr {
+	border-top-style: inset;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-left-style: inset;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+
+.hanging	{	
+	text-indent: -28px; 
+	padding-left: 28px;
+}
+
+.explanation {
+	font-family: "Courier New", Courier, monospace;
+	color: #000;
+	text-align: left;
+}
+
+.hide {
+  /*display: none;*/
+  opacity: 0;
+  cursor:pointer;
+}
+
+.myDIV:hover + .hide {
+  /*display: block;
+  color: black;*/
+/* 	opacity: 5;
+	font-size : 14px;
+	font-family : "Times New Roman", Times, serif;*/
+	cursor:pointer;
+}
+
+.instructioncell	{
+	background-color: #FFC;
+	padding: 10px;
+	font-size: large;
+	font-weight: bold;
+	vertical-align: bottom;
+	border:none
+}
+
+.headercell	{
+	background-color: #FFC;
+	padding: 10px;
+	font-size: large;
+	font-weight: bold;
+	text-align:center;
+	border:none;
+	font-style: italic;
+	vertical-align: top;
+}
+
+.underline	{font-style: underline;}
+
+/* Toggle slider */
+.switch {
+  /*position: relative;*/
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  
+	position: fixed;
+	top: 20;
+	right: 20;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+} 
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.LeftSoundCell {
+	background-color: #eeeeff;
+	width:50%;
+}
+
+.RightSoundCell {
+	background-color: #eeeeff;
+	width:50%;
+}
+
+.LeftSound {
+	font-size: 14pt;
+	font-family: Arial, Helvetica, sans-serif;
+	color: red;
+	font-weight: bold;
+}
+
+.RightSound {
+	font-size: 14pt;
+	font-family: Arial, Helvetica, sans-serif;
+	color: red;
+	font-weight: bold;
+}
+
+.LeftSpellingCell {
+	background-color: #eeeeff;
+	width:50%;
+	color: #000;
+}
+
+.RightSpellingCell {
+	background-color: #eeeeff;
+	width:50%;
+	color: #000;
+}
+
+.LeftSpelling {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	color: black;
+}
+
+.RightSpelling {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	color: black;
+}
+
+.LeftPronunciationCell {
+	background-color: #eeeeff;
+	width:50%;
+	color: #000;
+}
+
+.RightPronunciationCell {
+	background-color: #eeeeff;
+	width:50%;
+	color: #000;
+}
+.content .cuecell tr td #Speaker {
+	font-weight: bold;
+	text-align: right;
+	vertical-align: top;
+}
+.content .cuecell tr td #Statement {
+	text-align: left;
+	vertical-align: top;
+}
+.speaker {
+	font-weight: bold;
+	text-align: left;
+	vertical-align: top;
+	width: 10%;
+}
+GermanStatement {
+	font-style: italic;
+	text-align: left;
+	vertical-align: top;
+}

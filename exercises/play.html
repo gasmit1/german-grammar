@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<HTML>
+<HEAD>
+<LINK rel="stylesheet" type="text/css" href="../grammar - Copy.css">
+<script> 
+const playHtToken = '4055021b9cc842d29cc95eaa9e96566f'
+const playHtUserId = 'fDbp6imsSgcflh2dtcSfqI0YFqP2'
+
+async function tts(text) {
+  try {
+    const conversionResponse = await fetch('https://play.ht/api/v1/convert', {
+      method: 'POST',
+      headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
+        AUTHORIZATION: playHtToken,
+        'X-USER-ID': playHtUserId,
+      },
+      body: JSON.stringify({
+        voice: 'Vicki',
+        content: [text],
+      }),
+    })
+
+    if (!conversionResponse.ok) {
+      console.error('TTS conversion request failed')
+      return null
+    }
+
+    const conversion = await conversionResponse.json()
+    const jobId = conversion.transcriptionId
+
+    if (typeof jobId !== 'string') {
+      console.error('Invalid TTS job ID')
+      return null
+    }
+
+    for (let tries = 1; tries <= 20; tries++) {
+      const jobStatusResponse = await fetch(`https://play.ht/api/v1/articleStatus?transcriptionId=${jobId}`, {
+        method: 'GET',
+        headers: {
+          accept: 'application/json',
+          AUTHORIZATION: playHtToken,
+          'X-USER-ID': playHtUserId,
+        },
+      })
+
+      if (!jobStatusResponse.ok) {
+        console.error('Error getting TTS job status')
+        return null
+      }
+
+      const jobStatus = await jobStatusResponse.json()
+
+      if (jobStatus.converted) {
+        if (typeof jobStatus.audioUrl !== 'string') {
+          console.error('Invalid TTS audio URL')
+          return null
+        }
+
+        return jobStatus.audioUrl
+      }
+
+      await new Promise(resolve => setTimeout(resolve, tries * 100))
+    }
+  } catch (e) {
+    console.error(e)
+    return null
+  }
+}
+
+async function playTts(element) {
+  if (document.getElementById('audioSwitch').checked) {
+    const url = await tts(element.innerText)
+    if (url !== null) {
+      const ttsPlaybackElement = document.getElementById('ttsPlayback')
+      ttsPlaybackElement.src = url
+      ttsPlaybackElement.play()
+    }
+  }
+}
+
+function onCueClick(field) {
+  playTts(field)
+}
+
+function onTranslationClick(field) {
+  field.style.opacity = field.style.opacity === 1 ? 0 : 1
+}
+
+function onAnswerClick(field) {
+  if (field.style.opacity == 1) {	
+    field.style.opacity = 0
+  } else {	
+    field.style.opacity = 1
+    playTts(field)
+  }
+}
+</script>
+
+<LINK rel="stylesheet" type="text/css" href="grammar - Copy.css">
+<TITLE>Title</TITLE>
+</HEAD>
+
+<BODY class="content">
+<audio id="ttsPlayback"></audio>
+<label class="switch">
+  <input type="checkbox" id="audioSwitch" checked>
+  <span class="slider round"></span>
+</label>
+<TABLE WIDTH="100%">
+
+  <TR>
+
+		<TD class="buttoncell"><A href="#" class="mybutton"><img src="../page icon.png" width="25" height="25" alt="Grammar page"></A>
+    </TD>
+
+  </TR>
+
+</TABLE>
+
+<HR>
+
+
+<TABLE WIDTH="100%" border="1"><TR>
+  <TD class="title">Title</TD></TR></TABLE><hr>
+   <table width="100%" border="1" cellpadding="5" cellspacing="5" class="cuecell">
+  <tr>
+    <td  class="instructioncell" border=0><p>Instructions</p></td>
+    <td class="headercell"><img src="US flag button.png" width="48" height="48" alt="US flag"><br>
+    Click in any field below to reveal a translation.<br>
+    Click again to hide it.</td>
+    <td  class="headercell"><img src="German flag.jpg" width="48" height="48" alt="Germany flag"><br>
+      <span class="German">Klicken Sie auf ein Feld unten, um die richtige Antwort zu sehen.<br>
+    Klicken Sie nochmals darauf, um es zu l&ouml;schen.</span></td>
+  </tr>
+  <tr>
+  <TR><TD colspan=3>  </TD></TR>
+    <td width="50%" class="cuecell" onClick="onCueClick(this)"><div class="myDIV"><em>Was erwarten Sie, wenn Sie zur&uuml;ckkommen? (<font class="emphasis2">die Kinder schon eingeschlafen</font>).</em></div></td>
+    <td>
+            <div class="myDIV"><em>What do you expect, when you come back? (the children already fallen asleep)<br>
+When I come back, the children <font class="emphasis2">will have</font> already <font class="emphasis2">fallen asleep</font>.</em></div>
+</td>
+      <td width="25%" class="cuecell" onClick="onCueClick(this)">
+            <div class="myDIV"><em>Wenn ich zur&uuml;ckkomme, <font class="emphasis2">werden</font> die Kinder schon <font class="emphasis2">eingeschlafen sein</font>.</em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="1"><li>
+        <div class="myDIV"><em>Was erwartet dein Freund von seiner Freundin? (das Geschenk sicher <font class="emphasis2">ausgepackt</font>)</em></div>
+      </li>
+      </ol>
+    </td>
+    <td class="translationcell">
+            <div class="hide" id="Translation1" onClick="onTranslationClick(this)"><em>What does your friend expect about his girlfriend?<br>
+She <font class="emphasis2">will</font> surely <font class="emphasis2">have unwrapped</font> the gift by the time we arrive.</em></div>
+</td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer1" onClick="onAnswerClick(this)"><em>Sie <font class="emphasis2">wird</font> das Geschenk sicher <font class="emphasis2">ausgepackt haben</font>, wenn wir ankommen.</em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="2"><li><div class="myDIV"><em>Cuesentence2</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation2" onClick="onTranslationClick(this)">Translation2</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer2" onClick="onAnswerClick(this)"><em>Answer2</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="3"><li><div class="myDIV"><em>CueSentence3</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation3" onClick="onTranslationClick(this)">Translation3</div>
+    </td>
+      <td width="8" valign="top">
+            <div class="hide" id="Answer3" onClick="onAnswerClick(this)"><em>Answer3</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="4"><li><div class="myDIV"><em>CueSentence4</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation4" onClick="onTranslationClick(this)">Translation4</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer4" onClick="onAnswerClick(this)"><em>Answer4</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="5"><li><div class="myDIV"><em>CueSentence5</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation5" onClick="onTranslationClick(this)">Translation5</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer5" onClick="onAnswerClick(this)"><em>Answer5</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="6"><li><div class="myDIV"><em>CueSentence6</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation6" onClick="onTranslationClick(this)">Translation6</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer6" onClick="onAnswerClick(this)"><em>Answer6</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="7"><li><div class="myDIV"><em>CueSentence7</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation7" onClick="onTranslationClick(this)">Translation7</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer7" onClick="onAnswerClick(this)"><em>Answer7</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="8"><li><div class="myDIV"><em>CueSentence8</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation8" onClick="onTranslationClick(this)">Translation8</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer8" onClick="onAnswerClick(this)"><em>Answer8</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="9"><li><div class="myDIV"><em>CueSentence9</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation9" onClick="onTranslationClick(this)">Translation9</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer9" onClick="onAnswerClick(this)"><em>Answer9</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="10"><li><div class="myDIV"><em>CueSentence10</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation10" onClick="onTranslationClick(this)">Translation10</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer10" onClick="onAnswerClick(this)"><em>Answer10</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="11"><li><div class="myDIV"><em>CueSentence11</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation11" onClick="onTranslationClick(this)">Translation11</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer11" onClick="onAnswerClick(this)"><em>Answer11</em></div>
+    </td>
+  </tr>
+   <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="12"><li><div class="myDIV"><em>CueSentence12</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation12" onClick="onTranslationClick(this)">Translation12</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer12" onClick="onAnswerClick(this)"><em>Answer12</em></div>
+    </td>
+  </tr>
+ </table>
+</BODY>
+</HTML>

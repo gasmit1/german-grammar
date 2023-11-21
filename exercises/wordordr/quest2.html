@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML><!-- InstanceBegin template="/Templates/template1.dwt" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+<script src="../playsound.js"></script>
+
+<LINK rel="stylesheet" type="text/css" href="../../grammar - Copy.css">
+<!-- InstanceBeginEditable name="doctitle" -->
+<TITLE>Ja-nein questions</TITLE>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</HEAD>
+
+<BODY class="content">
+<audio id="ttsPlayback"></audio>
+<label class="switch">
+  <input type="checkbox" id="audioSwitch" checked>
+  <span class="slider round"></span>
+</label>
+<TABLE WIDTH="100%">
+
+  <TR>
+
+		<TD class="buttoncell">
+
+    <!-- InstanceBeginEditable name="Grammar page" -->
+    <A href="../../wordordr/question.htm" class="mybutton"><img src="../../page icon.png" width="25" height="25" alt="Grammar page"></A>
+    <!-- InstanceEndEditable -->
+
+    
+    	</TD>
+
+  </TR>
+
+</TABLE>
+
+<HR>
+
+
+<TABLE WIDTH="100%" border="1"><TR>
+  <TD class="title"><!-- InstanceBeginEditable name="Title" --><font class=title><em>Ja-nein</em> questions</font><!-- InstanceEndEditable --></TD></TR></TABLE><hr>
+   <table width="100%" border="1" cellpadding="5" cellspacing="5" class="cuecell">
+  <tr>
+    <td  class="instructioncell" border=0><!-- InstanceBeginEditable name="Instruictions" -->
+  <p class="instructioncell">Ask a question which elicits the answer given.</p>
+  <!-- InstanceEndEditable --></td>
+    <td class="headercell"><img src="../../US flag button.png" width="48" height="48" alt="US flag"><br>
+    Click in any field below to reveal a translation.<br>
+    Click again to hide it.</td>
+    <td  class="headercell"><img src="../../German flag.jpg" width="48" height="48" alt="Germany flag"><br>
+      <span class="German">Klicken Sie auf ein Feld unten, um die richtige Antwort zu sehen.<br>
+    Klicken Sie nochmals darauf, um es zu l&ouml;schen.</span></td>
+  </tr>
+  <tr>
+  <TR><TD colspan=3>  </TD></TR>
+    <td width="50%" class="cuecell" onClick="onCueClick(this)"><div class="myDIV"><em><!-- InstanceBeginEditable name="Cue sentence" -->Ja, <font class="emphasis2">es gibt</font> viele Studenten in Berlin. <!-- InstanceEndEditable --></em></div></td>
+    <td>
+            <div class="myDIV"><!-- InstanceBeginEditable name="Cue translation" -->
+              <p>Yes, there are lots of students in Berlin.<br>
+               <font class="emphasis2">Are there</font> lots of students in Berlin?              </p>
+            <!-- InstanceEndEditable --></div>
+</td>
+      <td width="25%" class="cuecell" onClick="onCueClick(this)">
+            <div class="myDIV"><em><!-- InstanceBeginEditable name="Cue answer" --><font class="emphasis2">Gibt es</font> viele Studenten in Berlin? <!-- InstanceEndEditable --></em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="1"><li>
+        <div class="myDIV"><em><!-- InstanceBeginEditable name="Cue Sentence 1" -->
+Ja, <font class="emphasis2">das Wetter in Italien ist</font> furchtbar heiss. <!-- InstanceEndEditable --></em></div>
+      </li>
+      </ol>
+    </td>
+    <td class="translationcell">
+            <div class="hide" id="Translation1" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 1" --> Yes, the weather in Italy is terribly hot.<br>
+             <font class="emphasis2">Is the weather</font> in Italy terribly hot?            <!-- InstanceEndEditable --></div>
+</td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer1" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 1" --><font class="emphasis2">Ist das Wetter</font> in Italien furchtbar heiss?<!-- InstanceEndEditable --></em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="2"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence2" -->Ja, <font class="emphasis2">die Kinder spielen</font> gern Tennis. <!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation2" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 2" --> Yes, the children like to play tennis.<br>
+             <font class="emphasis2">Do the children </font>like to play tennis? <!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer2" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 2" --><font class="emphasis2">Spielen die Kinder</font> gern Tennis?<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="3"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence3" -->Nein, <font class="emphasis2">wir sehen</font> nicht oft fern. <!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation3" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 3" --> No, we don't watch television often. <br>
+             <font class="emphasis2">Do you all watch</font> television often? <!-- InstanceEndEditable --></div>
+    </td>
+      <td width="8" valign="top">
+            <div class="hide" id="Answer3" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 3" --><font class="emphasis2">Seht ihr</font> oft fern?<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="4"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence4" --> Ja, <font class="emphasis2">man spricht</font> Deutsch in Liechtenstein. <!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation4" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 4" -->Yes, they speak German in Liechtenstein. <br>
+             <font class="emphasis2">Do they speak</font> German in Liechtenstein?            <!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer4" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 4" --><font class="emphasis2">Spricht man</font> Deutsch in Liechtenstein?<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="5"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence5" --> Ja, <font class="emphasis2">die Deutschen fahren</font> schnell auf der Autobahn. <!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation5" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 5" -->Yes, the Germans drive fast on the freeway.<br>
+             <font class="emphasis2">Do the Germans drive</font> fast on the freeway? <!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer5" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 5" --><font class="emphasis2">Fahren die Deutschen</font> schnell auf der Autobahn? <!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="6"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence6" -->|Nein, <font class="emphasis2">ich bleibe</font> heute nicht zu Hause. <!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation6" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 6" -->No, I am not staying home today. <br>
+             <font class="emphasis2">Are you staying</font> home today? <!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer6" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 6" --><font class="emphasis2">Bleibst du</font> (informal) heute zu Hause? <!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="7"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence7" -->Ja, <font class="emphasis2">das Haus hat</font> viel gekostet. <!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation7" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 7" -->Yes, the house cost a lot. <br>
+             <font class="emphasis2">Did the house</font> cost a lot? <!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer7" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 7" --><font class="emphasis2">Hat das Haus</font> viel gekostet? <!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="8"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence8" -->Nein, <font class="emphasis2">wir haben</font> nicht gut geschlafen. <!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation8" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 8" --> No, we did not sleep well. <font class="emphasis2"><br>
+            Did you</font> sleep well? <br>
+            <!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer8" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 8" --><font class="emphasis2">Haben Sie</font> (formal) gut geschlafen?<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="9"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence9" -->CueSentence9<!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation9" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 9" -->Translation9<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer9" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 9" -->Answer9<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="10"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence10" -->CueSentence10<!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation10" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 10" -->Translation10<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer10" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 10" -->Answer10<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="11"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence11" -->CueSentence11<!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation11" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 11" -->Translation11<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer11" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 11" -->Answer11<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+   <tr>
+    <td class="cuecell">
+      <ol start="12"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence12" -->CueSentence12<!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation12" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 12" -->Translation12<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer12" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 12" -->Answer12<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+ </table>
+</BODY>
+<!-- InstanceEnd --></HTML>

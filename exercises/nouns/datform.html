@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+<HEAD>
+<script src="../playsound.js"></script>
+
+<LINK rel="stylesheet" type="text/css" href="../../grammar - Copy.css">
+<TITLE>Dative case</TITLE>
+</HEAD>
+
+<BODY class="content">
+<audio id="ttsPlayback"></audio>
+<label class="switch">
+  <input type="checkbox" id="audioSwitch" checked>
+  <span class="slider round"></span>
+</label>
+<TABLE WIDTH="100%">
+
+  <TR>
+
+		<TD class="buttoncell"><A href="../../nouns/datfuncform.htm" class="mybutton"><img src="../../page icon.png" width="25" height="25" alt="Grammar page"></A>
+    </TD>
+
+  </TR>
+
+</TABLE>
+
+<HR>
+
+
+<TABLE WIDTH="100%" border="1"><TR>
+  <TD class="title"><font class=title>Dative case</font></TD></TR></TABLE><hr>
+   <table width="100%" border="1" cellpadding="5" cellspacing="5" class="cuecell">
+  <tr>
+    <td  class="instructioncell" border=0><p class="instructioncell">Say to whom you must explain the situation. </p></td>
+    <td class="headercell"><img src="../../US flag button.png" width="48" height="48" alt="US flag"><br>
+    Click in any field below to reveal a translation.<br>
+    Click again to hide it.</td>
+    <td  class="headercell"><img src="../../German flag.jpg" width="48" height="48" alt="Germany flag"><br>
+      <span class="German">Klicken Sie auf ein Feld unten, um die richtige Antwort zu sehen.<br>
+    Klicken Sie nochmals darauf, um es zu l&ouml;schen.</span></td>
+  </tr>
+  <tr>
+  <TR><TD colspan=3>  </TD></TR>
+    <td width="50%" class="cuecell" onClick="onCueClick(this)"><div class="myDIV"><em>Wem m&uuml;ssen Sie die Lage erkl&auml;ren? (<span class="emphasis2">die Studenten</span>)</em></div></td>
+    <td>
+            <div class="myDIV">To <span class="emphasis2">whom</span> must you explain the situation? (<span class="emphasis2">the students</span>)<br>
+      I have to explain the situation to <span class="emphasis2">the students</span>.</div>
+</td>
+      <td width="25%" class="cuecell" onClick="onCueClick(this)">
+            <div class="myDIV"><em>Ich muss <span class="emphasis2">den Studenten</span> die Lage erkl&auml;ren.</em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="1"><li>
+        <div class="myDIV"><em>Wem m&uuml;ssen Sie die Lage erkl&auml;ren? (<span class="emphasis2">mein Chef</span>)</em></div>
+      </li>
+      </ol>
+    </td>
+    <td class="translationcell">
+            <div class="hide" id="Translation1" onClick="onTranslationClick(this)">To <span class="emphasis2">whom</span> must you explain the situation? (<span class="emphasis2">my boss</span>)<br>
+            I have to explain the situation to <span class="emphasis2">my boss</span>. </div>
+</td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer1" onClick="onAnswerClick(this)"><em>Ich muss <span class="emphasis2">meinem Chef</span> die Lage erkl&auml;ren.</em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="2"><li><div class="myDIV"><em>Wem m&uuml;ssen Sie die Lage erkl&auml;ren? (<span class="emphasis2">seine Mutter</span>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation2" onClick="onTranslationClick(this)">To <span class="emphasis2">whom</span> must you explain the situation? (<span class="emphasis2">his mother</span>)<br>
+            I have to explain the situation to <span class="emphasis2">his mother</span>. </div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer2" onClick="onAnswerClick(this)"><em>Ich muss <span class="emphasis2">seiner Mutter</span> die Lage erkl&auml;ren.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="3"><li><div class="myDIV"><em>Wem m&uuml;ssen Sie die Lage erkl&auml;ren? (<span class="emphasis2">ihre Kollegin</span>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation3" onClick="onTranslationClick(this)">To <span class="emphasis2">whom</span> must you explain the situation? (<span class="emphasis2">her colleague</span>)<br>
+            I have to explain the situation to <span class="emphasis2">her colleague</span>. </div>
+    </td>
+      <td width="8" valign="top">
+            <div class="hide" id="Answer3" onClick="onAnswerClick(this)"><em>Ich muss <span class="emphasis2">ihrer Kollegin</span> die Lage erkl&auml;ren.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="4"><li><div class="myDIV"><em>Wem m&uuml;ssen Sie die Lage erkl&auml;ren? (<span class="emphasis2">unser Kind</span>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation4" onClick="onTranslationClick(this)">To <span class="emphasis2">whom</span> must you explain the situation? (<span class="emphasis2">our child</span>)<br>
+            I have to explain the situation to <span class="emphasis2">our child</span>. </div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer4" onClick="onAnswerClick(this)"><em>Ich muss <span class="emphasis2">unserem Kind</span> die Lage erkl&auml;ren.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="5"><li><div class="myDIV"><em>Wem m&uuml;ssen Sie die Lage erkl&auml;ren? (<span class="emphasis2">dieser Mann</span>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation5" onClick="onTranslationClick(this)">To <span class="emphasis2">whom</span> must you explain the situation? (<span class="emphasis2">this man</span>)<br>
+            I have to explain the situation to <span class="emphasis2">this man</span>.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer5" onClick="onAnswerClick(this)"><em>Ich muss <span class="emphasis2">diesem Mann</span> die Lage erkl&auml;ren.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="6"><li><div class="myDIV"><em>Wem m&uuml;ssen Sie die Lage erkl&auml;ren? (<span class="emphasis2">deine Familie</span>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation6" onClick="onTranslationClick(this)">To <span class="emphasis2">whom</span> must you explain the situation? (<span class="emphasis2">your family</span>)<br>
+            I have to explain the situation to<span class="emphasis2"> your family</span>. </div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer6" onClick="onAnswerClick(this)"><em>Ich muss <span class="emphasis2">deiner Familie</span> die Lage erkl&auml;ren.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="7"><li><div class="myDIV"><em>Wem m&uuml;ssen Sie die Lage erkl&auml;ren? (<span class="emphasis2">dieses M&auml;dchen</span>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation7" onClick="onTranslationClick(this)">To <span class="emphasis2">whom</span> must you explain the situation? (<span class="emphasis2">this girl</span>)<br>
+            I have to explain the situation to <span class="emphasis2">this girl</span>. </div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer7" onClick="onAnswerClick(this)"><em>Ich muss <span class="emphasis2">diesem M&auml;dchen</span> die Lage erkl&auml;ren.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="8"><li><div class="myDIV"><em>Wem m&uuml;ssen Sie die Lage erkl&auml;ren? (<span class="emphasis2">meine Grosseltern</span>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation8" onClick="onTranslationClick(this)">To <span class="emphasis2">whom</span> must you explain the situation? (<span class="emphasis2">my grandparents</span>)<br>
+            I have to explain the situation to <span class="emphasis2">my grandparents</span>. </div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer8" onClick="onAnswerClick(this)"><em>Ich muss <span class="emphasis2">meinen Grosseltern</span> die Lage erkl&auml;ren.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="9"><li><div class="myDIV"><em>Wem m&uuml;ssen Sie die Lage erkl&auml;ren? (<span class="emphasis2">der Vertreter</span>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation9" onClick="onTranslationClick(this)">To <span class="emphasis2">whom</span> must you explain the situation? (<span class="emphasis2">the sales representative</span>)<br>
+            I have to explain the situation to <span class="emphasis2">the sales representative</span>.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer9" onClick="onAnswerClick(this)"><em>Ich muss <span class="emphasis2">dem Vertreter</span> die Lage erkl&auml;ren.</em></div>
+    </td>
+  </tr>
+ </table>
+</BODY>
+</HTML>

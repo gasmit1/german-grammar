@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+<HEAD>
+<script src="../playsound.js"></script>
+
+<LINK rel="stylesheet" type="text/css" href="../../grammar - Copy.css">
+<TITLE>*Title</TITLE>
+</HEAD>
+
+<BODY class="content">
+<audio id="ttsPlayback"></audio>
+<label class="switch">
+  <input type="checkbox" id="audioSwitch" checked>
+  <span class="slider round"></span>
+</label>
+<TABLE WIDTH="100%">
+
+  <TR>
+
+		<TD class="buttoncell"><A href="../../preposit/genpreps.htm" class="mybutton"><img src="../../page icon.png" width="25" height="25" alt="Grammar page"></A>
+    </TD>
+
+  </TR>
+
+</TABLE>
+
+<HR>
+
+
+<TABLE WIDTH="100%" border="1"><TR>
+  <TD class="title">Genitive prepostions</TD></TR></TABLE><hr>
+   <table width="100%" border="1" cellpadding="5" cellspacing="5" class="cuecell">
+  <tr>
+    <td  class="instructioncell" border=0><p class="instructioncell">Respond to the questions, using the cues in parentheses.</p></td>
+    <td class="headercell"><img src="../../US flag button.png" width="48" height="48" alt="US flag"><br>
+    Click in any field below to reveal a translation.<br>
+    Click again to hide it.</td>
+    <td  class="headercell"><img src="../../German flag.jpg" width="48" height="48" alt="Germany flag"><br>
+      <span class="German">Klicken Sie auf ein Feld unten, um die richtige Antwort zu sehen.<br>
+    Klicken Sie nochmals darauf, um es zu l&ouml;schen.</span></td>
+  </tr>
+  <tr>
+  <TR><TD colspan=3>  </TD></TR>
+    <td width="50%" class="cuecell" onClick="onCueClick(this)"><div class="myDIV"><em>Wann ist es besonders sch&ouml;n hier? (<FONT class="emphasis2">w&auml;hrend - der Winter</FONT>)</em></div></td>
+    <td>
+            <div class="myDIV"><span class="emphasis2">During the winter</span> it is especially beautiful here.</div>
+</td>
+      <td width="25%" class="cuecell" onClick="onCueClick(this)">
+            <div class="myDIV"><em><FONT class="emphasis2">W&auml;hrend des Winters</FONT> ist es besonders sch&ouml;n hier.</em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="1"><li>
+        <div class="myDIV"><em>Warum bleibt ihr im Sommer zu Hause? (<FONT class="emphasis2">wegen - der Verkehr</FONT>)</em></div>
+      </li>
+      </ol>
+    </td>
+    <td class="translationcell">
+            <div class="hide" id="Translation1" onClick="onTranslationClick(this)"><span class="emphasis2">Because of the traffic</span> we are staying at home this summer.</div>
+</td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer1" onClick="onAnswerClick(this)"><em><span class="emphasis2">Wegen des Verkehrs</span> bleiben wir im Sommer zu Hause.</em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="2"><li><div class="myDIV"><em>Warum fahren Dieter und Ulrike zum Strand? (<FONT class="emphasis2">wegen - die Hitze</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation2" onClick="onTranslationClick(this)"><span class="emphasis2">Because of the heat</span> Dieter and Ulrike are going to the beach.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer2" onClick="onAnswerClick(this)"><em><span class="emphasis2">Wegen der Hitze</span> fahren Dieter und Ulrike zum Strand.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="3"><li><div class="myDIV"><em>Wann sind die Blumen besonders sch&ouml;n? (<FONT class="emphasis2">w&auml;hrend - der Fr&uuml;hling</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation3" onClick="onTranslationClick(this)"><span class="emphasis2">During the spring</span> the flowers are especially pretty.</div>
+    </td>
+      <td width="8" valign="top">
+            <div class="hide" id="Answer3" onClick="onAnswerClick(this)"><em><span class="emphasis2">W&auml;hrend des Fr&uuml;hlings</span> sind die Blumen besonders sch&ouml;n. </em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="4"><li><div class="myDIV"><em>Lernen Sie jetzt Deutsch? (<FONT class="cue">ja, </FONT><span class="emphasis2">trotz - die Schwierigkeit</span>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation4" onClick="onTranslationClick(this)">Yes, <span class="emphasis2">in spite of the difficulty</span> I am learning German now.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer4" onClick="onAnswerClick(this)"><em>Ja, <span class="emphasis2">trotz der Schwierigkeit</span> lerne ich jetzt Deutsch.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="5"><li><div class="myDIV"><em>Lest ihr ein Selbsthilfebuch diesen Sommer? (<FONT class="emphasis2">statt - ein Roman</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation5" onClick="onTranslationClick(this)">Yes, <span class="emphasis2">instead of a novel</span> we are reading a self-help book this summer</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer5" onClick="onAnswerClick(this)"><em>Ja, <span class="emphasis2">statt eines Romans</span> lesen wir ein Selbsthilfebuch diesen Sommer.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="6"><li><div class="myDIV"><em>Glauben Sie dem Kind noch? (<FONT class="emphasis2">trotz - die fr&uuml;heren L&uuml;gen</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation6" onClick="onTranslationClick(this)"> <span class="emphasis2">In spite of the earlier lies</span> I still believe the child</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer6" onClick="onAnswerClick(this)"><em>Ja, <span class="emphasis2">trotz der fr&uuml;heren L&uuml;gen</span> glaube ich dem Kind noch.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="7"><li><div class="myDIV"><em>Wann arbeitet Veras Vater? (<FONT class="emphasis2">w&auml;hrend - die Woche</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation7" onClick="onTranslationClick(this)">Vera's father works <span class="emphasis2">during the week</span>.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer7" onClick="onAnswerClick(this)"><em><span class="emphasis2">W&auml;hrend der Woche</span> arbeitet Veras Vater.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="8"><li><div class="myDIV"><em>Kaufst du eine Bluse? (<FONT class="emphasis2">statt - ein Kleid</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation8" onClick="onTranslationClick(this)">Yes, <span class="emphasis2">instead of a dress</span> I am buying a blouse</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer8" onClick="onAnswerClick(this)"><em>Ja, <span class="emphasis2">statt eines Kleides</span> kaufe ich eine Bluse. </em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="9"><li><div class="myDIV"><em>Warum sitzen die Touristen unter dem Baum? (<FONT class="emphasis2">wegen - ihre M&uuml;digkeit</FONT>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation9" onClick="onTranslationClick(this)">Why are the tourists sitting under the tree? (<span class="emphasis2">because of - their exhaustion</span>)</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer9" onClick="onAnswerClick(this)"><em><span class="emphasis2">Wegen ihrer M&uuml;digkeit</span> sitzen die Touristen unter dem Baum. </em></div>
+    </td>
+  </tr>
+ </table>
+</BODY>
+</HTML>

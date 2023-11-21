@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML><!-- InstanceBegin template="/Templates/template1.dwt" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+<script src="../exercises/playsound.js"></script>
+
+<LINK rel="stylesheet" type="text/css" href="../grammar - Copy.css">
+<!-- InstanceBeginEditable name="doctitle" -->
+<TITLE>Title</TITLE>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</HEAD>
+
+<BODY class="content">
+<audio id="ttsPlayback"></audio>
+<label class="switch">
+  <input type="checkbox" id="audioSwitch" checked>
+  <span class="slider round"></span>
+</label>
+<TABLE WIDTH="100%">
+
+  <TR>
+
+		<TD class="buttoncell">
+
+    <!-- InstanceBeginEditable name="Grammar page" -->
+    <A href="#" class="mybutton"><img src="file:///D|/page icon.png" width="25" height="25" alt="Grammar page"></A>
+    <!-- InstanceEndEditable -->
+
+    
+    	</TD>
+
+  </TR>
+
+</TABLE>
+
+<HR>
+
+
+<TABLE WIDTH="100%" border="1"><TR>
+  <TD class="title"><!-- InstanceBeginEditable name="Title" -->Title<!-- InstanceEndEditable --></TD></TR></TABLE><hr>
+   <table width="100%" border="1" cellpadding="5" cellspacing="5" class="cuecell">
+  <tr>
+    <td  class="instructioncell" border=0><!-- InstanceBeginEditable name="Instruictions" -->
+    <p>Instructions</p>
+    <!-- InstanceEndEditable --></td>
+    <td class="headercell"><img src="../US flag button.png" width="48" height="48" alt="US flag"><br>
+    Click in any field below to reveal a translation.<br>
+    Click again to hide it.</td>
+    <td  class="headercell"><img src="../German flag.jpg" width="48" height="48" alt="Germany flag"><br>
+      <span class="German">Klicken Sie auf ein Feld unten, um die richtige Antwort zu sehen.<br>
+    Klicken Sie nochmals darauf, um es zu l&#x00F6schen.</span></td>
+  </tr>
+  <tr>
+  <TR><TD colspan=3>  </TD></TR>
+    <td width="50%" class="cuecell" onClick="onCueClick(this)"><div class="myDIV"><em><!-- InstanceBeginEditable name="Cue sentence" -->Guten Tag! Wie kann ich Ihnen helfen?<BR>
+Guten Tag! Ich habe ein Problem mit meinem Auto. Es macht komische Geräusche und die Leistung ist schlechter geworden.<BR>
+Kein Problem, lassen Sie mich einen Blick darauf werfen. Haben Sie eine Ahnung, was das Problem verursachen könnte?<BR>
+Ich bin mir nicht sicher, aber ich denke, es könnte etwas mit dem Motor oder der Auspuffanlage zu tun haben.<BR>
+Verstehe. Ich werde das Auto auf die Hebebühne nehmen und eine gründliche Inspektion durchführen, um das Problem zu identifizieren. Haben Sie noch andere Symptome bemerkt, wie zum Beispiel eine erhöhte Abgasemission oder einen Ölverlust?<BR>
+Ja, tatsächlich habe ich bemerkt, dass der Auspuff stärker qualmt als normalerweise. Und ich musste in letzter Zeit öfter Öl nachfüllen.<BR>
+Das sind wichtige Informationen. Ich werde sicherstellen, dass ich den Auspuff und den Motor genauer überprüfe, um die Ursache zu finden. Haben Sie einen bestimmten Zeitrahmen im Sinn, in dem Sie das Auto zurückbenötigen?<BR>
+Es wäre großartig, wenn Sie es so schnell wie möglich reparieren könnten. Ich bin auf mein Auto angewiesen, um zur Arbeit zu kommen.<BR>
+Ich werde mein Bestes tun, um die Reparatur so schnell wie möglich abzuschließen. Ich werde Sie kontaktieren, sobald ich das Problem identifiziert habe und Ihnen einen Kostenvoranschlag gebe. Ist das in Ordnung für Sie?<BR>
+Ja, das ist in Ordnung. Ich schätze Ihre Hilfe. Vielen Dank im Voraus.<BR>
+Gern geschehen! Ich werde mich um Ihr Auto kümmern. Sie können sicher sein, dass wir das Problem beheben werden. Haben Sie noch Fragen?<BR>
+Nein, im Moment fällt mir nichts ein. Ich vertraue darauf, dass Sie das Problem finden und beheben können. Vielen Dank!<BR>
+Kein Problem, das ist unser Job. Wir werden unser Bestes geben, um Ihr Auto wieder in Top-Zustand zu bringen. Vielen Dank für Ihr Vertrauen. Auf Wiedersehen!<BR>
+Auf Wiedersehen!<!-- InstanceEndEditable --></em></div></td>
+    <td>
+            <div class="myDIV"><!-- InstanceBeginEditable name="Cue translation" -->CueTranslation<!-- InstanceEndEditable --></div>
+</td>
+      <td width="25%" class="cuecell" onClick="onCueClick(this)">
+            <div class="myDIV"><em><!-- InstanceBeginEditable name="Cue answer" -->CueAnswer<!-- InstanceEndEditable --></em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="1"><li>
+        <div class="myDIV"><em><!-- InstanceBeginEditable name="Cue Sentence 1" -->CueSentence1<!-- InstanceEndEditable --></em></div>
+      </li>
+      </ol>
+    </td>
+    <td class="translationcell">
+            <div class="hide" id="Translation1" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 1" -->Translation1<!-- InstanceEndEditable --></div>
+</td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer1" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 1" -->Answer1<!-- InstanceEndEditable --></em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="2"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence2" -->Cuesentence2<!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation2" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 2" -->Translation2<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer2" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 2" -->Answer2<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="3"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence3" -->CueSentence3<!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation3" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 3" -->Translation3<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="8" valign="top">
+            <div class="hide" id="Answer3" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 3" -->Answer3<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="4"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence4" -->CueSentence4<!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation4" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 4" -->Translation4<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer4" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 4" -->Answer4<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="5"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence5" -->CueSentence5<!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation5" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 5" -->Translation5<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer5" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 5" -->Answer5<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="6"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence6" -->CueSentence6<!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation6" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 6" -->Translation6<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer6" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 6" -->Answer6<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="7"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence7" -->CueSentence7<!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation7" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 7" -->Translation7<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer7" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 7" -->Answer7<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="8"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence8" -->CueSentence8<!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation8" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 8" -->Translation8<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer8" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 8" -->Answer8<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="9"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence9" -->CueSentence9<!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation9" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 9" -->Translation9<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer9" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 9" -->Answer9<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="10"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence10" -->CueSentence10<!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation10" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 10" -->Translation10<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer10" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 10" -->Answer10<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+ </table>
+</BODY>
+<!-- InstanceEnd --></HTML>

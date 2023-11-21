@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+<HEAD>
+<script src="../playsound.js"></script>
+
+<LINK rel="stylesheet" type="text/css" href="../../grammar - Copy.css">
+<TITLE>Accusative case</TITLE>
+</HEAD>
+
+<BODY class="content">
+<audio id="ttsPlayback"></audio>
+<label class="switch">
+  <input type="checkbox" id="audioSwitch" checked>
+  <span class="slider round"></span>
+</label>
+<TABLE WIDTH="100%">
+
+  <TR>
+
+		<TD class="buttoncell"><A href="../../nouns/accfuncform.htm" class="mybutton"><img src="file:///D|/page icon.png" width="25" height="25" alt="Grammar page"></A>
+    </TD>
+
+  </TR>
+
+</TABLE>
+
+<HR>
+
+
+<TABLE WIDTH="100%" border="1"><TR>
+  <TD class="title">Accusative case</TD></TR></TABLE><hr>
+   <table width="100%" border="1" cellpadding="5" cellspacing="5" class="cuecell">
+  <tr>
+    <td  class="instructioncell" border=0><p class="instructioncell">Say whom you see at the office party by indicating who they are and where they are located.</p></td>
+    <td class="headercell"><img src="../../US flag button.png" width="48" height="48" alt="US flag"><br>
+    Click in any field below to reveal a translation.<br>
+    Click again to hide it.</td>
+    <td  class="headercell"><img src="../../German flag.jpg" width="48" height="48" alt="Germany flag"><br>
+      <span class="German">Klicken Sie auf ein Feld unten, um die richtige Antwort zu sehen.<br>
+    Klicken Sie nochmals darauf, um es zu l&ouml;schen.</span></td>
+  </tr>
+  <tr>
+  <TR><TD colspan=3>  </TD></TR>
+    <td width="50%" class="cuecell" onClick="onCueClick(this)"><div class="myDIV"><em>Wen sehen Sie im Sessel? (<span class="emphasis2">die Sekret&auml;rin</span>)</em></div></td>
+    <td>
+            <div class="myDIV">Whom do you see on the lounge chair? (<span class="emphasis2">the secretary</span>)<br>
+            I see <span class="emphasis2">the secretary</span> on the lounge chair.</div>
+</td>
+      <td width="25%" class="cuecell" onClick="onCueClick(this)">
+            <div class="myDIV"><em>Ich sehe <font class=emphasis2>die Sekret&auml;rin</font> im Sessel.</em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="1"><li>
+        <div class="myDIV"><em>Wen sehen Sie an der T&uuml;r? (<font class="emphasis2">der Chef</font>)</em></div>
+      </li>
+      </ol>
+    </td>
+    <td class="translationcell">
+            <div class="hide" id="Translation1" onClick="onTranslationClick(this)">Whom do you see at the door? (<font class="emphasis2">the boss</font>)<font class=emphasis2><br>
+            </font>I see <span class="emphasis2">the boss</span> at the door.</div>
+</td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer1" onClick="onAnswerClick(this)"><em>Ich sehe <span class="emphasis2">den Chef</span> an der T&uuml;r.</em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="2"><li><div class="myDIV"><em>Wen sehen Sie am Fenster? <font class=emphasis2>(</font><span class="emphasis2">das Fr&auml;ulein</span><font class=emphasis2>)</font></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation2" onClick="onTranslationClick(this)">Whom do you see at the window? (<font class="emphasis2">the girl</font>)<br>
+            I see <span class="emphasis2">the girl</span> at the window.</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer2" onClick="onAnswerClick(this)"><em>Ich sehe <span class="emphasis2">das Fr&auml;ulein</span> am Fenster.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="3"><li><div class="myDIV"><em>Wen sehen Sie in der Ecke? (<span class="emphasis2">der Buchhalter</span>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation3" onClick="onTranslationClick(this)">Whom do you see in the corner? (<span class="emphasis2">the accountant</span>)<br>
+            I see <span class="emphasis2">the accountant</span> in the corner.</div>
+    </td>
+      <td width="8" valign="top">
+            <div class="hide" id="Answer3" onClick="onAnswerClick(this)"><em>Ich sehe <span class="emphasis2">den Buchhalter</span> in der Ecke.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="4"><li><div class="myDIV"><em>Was sehen Sie auf dem Boden? (<span class="emphasis2">der Hund</span>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation4" onClick="onTranslationClick(this)">What do you see on the floor? (<span class="emphasis2">the dog</span>)<br>
+              I see <span class="emphasis2">the dog</span> on the floor. </div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer4" onClick="onAnswerClick(this)"><em>Ich sehe <span class="emphasis2">den Hund</span> auf dem Boden. </em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="5"><li><div class="myDIV"><em>Wen sehen Sie auf dem Sofa? <font>(</font><span class="emphasis2">die Familie</span><font>)</font></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation5" onClick="onTranslationClick(this)"><font>Whom do you see</font> on the sofa? (<span class="emphasis2">the family</span>)</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer5" onClick="onAnswerClick(this)"><em>Ich sehe <span class="emphasis2">die Familie</span> auf dem Sofa.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="6"><li><div class="myDIV"><em> Wen sehen Sie vor dem Fernsehen? (<font class="emphasis2">das Kind</font>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation6" onClick="onTranslationClick(this)"><font>Whom do you see</font> in front of the television? (<span class="emphasis2">the child</span>)</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer6" onClick="onAnswerClick(this)"><em>Ich sehe <span class="emphasis2">das Kind</span> vor dem Fernsehen.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="7"><li><div class="myDIV"><em>Wen sehen Sie  in der K&uuml;che? (<font class="emphasis2">der Mann</font>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation7" onClick="onTranslationClick(this)"><font>Whom do you see</font> in the kitchen? (<span class="emphasis2">the man</span>)</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer7" onClick="onAnswerClick(this)"><em>Ich sehe <span class="emphasis2">den Mann</span> in der K&uuml;che.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="8"><li><div class="myDIV"><em> Wen sehen Sie neben der Stehlampe? (<font class="emphasis2">die Dame</font>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation8" onClick="onTranslationClick(this)"><font>Whom do you see</font> next to the pole lamp? (<span class="emphasis2">the lady</span>)</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer8" onClick="onAnswerClick(this)"><em>Ich sehe <span class="emphasis2">die Dame</span> neben der Stehlampe.</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="9"><li><div class="myDIV"><em>Wen sehen Sie vor dem Tisch? (<font class="emphasis2">die Frauen</font>)</em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation9" onClick="onTranslationClick(this)"><font>Whom do you see</font> in front of the table? (<span class="emphasis2">the women</span>)</div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer9" onClick="onAnswerClick(this)"><em>Ich sehe <span class="emphasis2">die Frauen</span> vor dem Tisch.</em></div>
+    </td>
+  </tr>
+ </table>
+</BODY>
+</HTML>

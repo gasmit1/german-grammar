@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML><!-- InstanceBegin template="/Templates/template1.dwt" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+<script src="../playsound.js"></script>
+
+<LINK rel="stylesheet" type="text/css" href="../../grammar - Copy.css">
+<!-- InstanceBeginEditable name="doctitle" -->
+<TITLE>Questions</TITLE>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</HEAD>
+
+<BODY class="content">
+<audio id="ttsPlayback"></audio>
+<label class="switch">
+  <input type="checkbox" id="audioSwitch" checked>
+  <span class="slider round"></span>
+</label>
+<TABLE WIDTH="100%">
+
+  <TR>
+
+		<TD class="buttoncell">
+
+    <!-- InstanceBeginEditable name="Grammar page" -->
+    <A href="../../wordordr/question.htm" class="mybutton"><img src="../../page icon.png" width="25" height="25" alt="Grammar page"></A>
+    <!-- InstanceEndEditable -->
+
+    
+    	</TD>
+
+  </TR>
+
+</TABLE>
+
+<HR>
+
+
+<TABLE WIDTH="100%" border="1"><TR>
+  <TD class="title"><!-- InstanceBeginEditable name="Title" -->Questions<!-- InstanceEndEditable --></TD></TR></TABLE><hr>
+   <table width="100%" border="1" cellpadding="5" cellspacing="5" class="cuecell">
+  <tr>
+    <td  class="instructioncell" border=0><!-- InstanceBeginEditable name="Instruictions" -->
+  <p class="instructioncell">Find out about Mr. Thiel's activities by asking a question which will elicit the information given at the beginning of the statement.</p>
+  <!-- InstanceEndEditable --></td>
+    <td class="headercell"><img src="../../US flag button.png" width="48" height="48" alt="US flag"><br>
+    Click in any field below to reveal a translation.<br>
+    Click again to hide it.</td>
+    <td  class="headercell"><img src="../../German flag.jpg" width="48" height="48" alt="Germany flag"><br>
+      <span class="German">Klicken Sie auf ein Feld unten, um die richtige Antwort zu sehen.<br>
+    Klicken Sie nochmals darauf, um es zu l&ouml;schen.</span></td>
+  </tr>
+  <tr>
+  <TR><TD colspan=3>  </TD></TR>
+    <td width="50%" class="cuecell" onClick="onCueClick(this)"><div class="myDIV"><em><!-- InstanceBeginEditable name="Cue sentence" --><font class="emphasis2">Im Winter</font> flog Herr Thiel nach Deutschland.<!-- InstanceEndEditable --></em></div></td>
+    <td>
+            <div class="myDIV"><!-- InstanceBeginEditable name="Cue translation" --> <font class="emphasis2">In the winter</font>, Mr. Thiel flew to Germany. <br>
+      <font class="emphasis2">When</font> did he fly to Germany? <!-- InstanceEndEditable --></div>
+</td>
+      <td width="25%" class="cuecell" onClick="onCueClick(this)">
+            <div class="myDIV"><em><!-- InstanceBeginEditable name="Cue answer" --><font class="emphasis2">Wann</font> flog er nach Deutschland? <!-- InstanceEndEditable --></em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)">
+      <ol start="1"><li>
+        <div class="myDIV"><em><!-- InstanceBeginEditable name="Cue Sentence 1" --><font class="emphasis2">In Hamburg</font> besuchte Herr Thiel seine Eltern. <!-- InstanceEndEditable --></em></div>
+      </li>
+      </ol>
+    </td>
+    <td class="translationcell">
+            <div class="hide" id="Translation1" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 1" --><font class="emphasis2">In Hamburg</font> Mr. Thiel visited his parents. <br>
+      <font class="emphasis2">Where</font> did he visit his parents? <!-- InstanceEndEditable --></div>
+</td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer1" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 1" --><font class="emphasis2">Wo</font> besuchte er seine Eltern? <!-- InstanceEndEditable --></em></div>
+       </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="2"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence2" --><font class="emphasis2">Mit dem Zug</font> fuhr Herr Thiel nach Hannover. <!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation2" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 2" -->Mr. Thiel travelled <font class="emphasis2">by train</font> to Hannover. <br>
+        <font class="emphasis2">How</font> did he travel to Hannover? <!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer2" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 2" --><font class="emphasis2">Wie</font> fuhr er nach Hannover? <!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="3"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence3" --><font class="emphasis2">Seine Schwester</font> traf Herr Thiel in Osnabr&uuml;ck. <!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation3" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 3" -->Mr. Thiel met <font class="emphasis2">his sister</font> in Osnabr&uuml;ck. <br>
+             <font class="emphasis2">Whom</font> did he meet in Osnabr&uuml;ck?
+| <!-- InstanceEndEditable --></div>
+    </td>
+      <td width="8" valign="top">
+            <div class="hide" id="Answer3" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 3" --><font class="emphasis2">Wen</font> traf er in Osnabr&uuml;ck?<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="4"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence4" --><font class="emphasis2">Um dreizehn Uhr</font> zwanzig landete Herr Thiel in Frankfurt. <!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation4" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 4" --><font class="emphasis2">At one-twenty in the afternoon</font> Mr. Thiel landed in Frankfurt. <br>
+             <font class="emphasis2">When</font> did he land in Frankfurt?<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer4" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 4" --><font class="emphasis2">Wann</font> landete er in Frankfurt?<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="5"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence5" --><font class="emphasis2">Herrn Thiels</font> Schwager war Arzt in M&uuml;nster. <!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation5" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 5" --><font class="emphasis2">Mr. Thiel's</font> brother-in-law was a doctor in M&uuml;nster. <br>
+             <font class="emphasis2">Whose</font> brother-in-law was a doctor in M&uuml;nster?
+ <!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer5" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 5" --><font class="emphasis2">Wessen</font> Schwager war Arzt in M&uuml;nster?<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="6"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence6" --><font class="emphasis2">Wegen </font>des Wetters musste Herr Thiel l&auml;nger in K&ouml;ln bleiben. <!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation6" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 6" --><font class="emphasis2">Because of </font>the weather, Mr. Thiel had to stay longer in Cologne. <br>
+             <font class="emphasis2">Why</font> did he have to stay longer in Cologne?<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer6" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 6" --> <font class="emphasis2">Warum</font> musste er l&auml;nger in K&ouml;ln bleiben?<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="7"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence7" --><font class="emphasis2">Zwei Tage</font> verbrachte Herr Thiel in Bonn. <!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation7" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 7" -->Mr. Thiel spent <font class="emphasis2">two </font>days in Bonn. <br>
+       <font class="emphasis2">How many</font> days did he spend in Bonn? <!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer7" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 7" --><font class="emphasis2">Wieviele</font> Tage verbrachte er in Bonn? <!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="8"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence8" -->Mit <font class=emphasis2>seiner Schwester</font> ging Herr Thiel oft spazieren. <!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation8" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 8" -->Mr. Thiel often went walking with<font class="emphasis2"> his sister</font>.  <br>
+            With <font class="emphasis2">whom</font> did he often go walking? <!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer8" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 8" --><br>
+Mit <font class="emphasis2">wem</font> ging er oft spazieren?<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="9"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence9" --><font class=emphasis2>&uuml;ber Politik</font> sprach Herr Thiel mit seinem Vater.<!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation9" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 9" -->Mr. Thiel talked <font class="emphasis2">about politics</font> with his father. <br>
+            <font class="emphasis2">About wha</font>t did he talk with his father?<br>
+            <!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer9" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 9" --><font class="emphasis2">Wor&uuml;ber</font> sprach er mit seinem Vater?<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="10"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence10" -->CueSentence10<!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation10" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 10" -->Translation10<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer10" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 10" -->Answer10<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="cuecell">
+      <ol start="11"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence11" -->CueSentence11<!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation11" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 11" -->Translation11<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer11" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 11" -->Answer11<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+   <tr>
+    <td class="cuecell">
+      <ol start="12"><li><div class="myDIV"><em><!-- InstanceBeginEditable name="CueSentence12" -->CueSentence12<!-- InstanceEndEditable --></em></div>
+        </li></ol>
+     </td>
+     <td>
+            <div class="hide" id="Translation12" onClick="onTranslationClick(this)"><!-- InstanceBeginEditable name="Translation 12" -->Translation12<!-- InstanceEndEditable --></div>
+    </td>
+      <td width="25%" valign="top">
+            <div class="hide" id="Answer12" onClick="onAnswerClick(this)"><em><!-- InstanceBeginEditable name="Answer 12" -->Answer12<!-- InstanceEndEditable --></em></div>
+    </td>
+  </tr>
+ </table>
+</BODY>
+<!-- InstanceEnd --></HTML>
