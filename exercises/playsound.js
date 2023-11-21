@@ -13,7 +13,7 @@ async function tts(text) {
         'X-USER-ID': playHtUserId,
       },
       body: JSON.stringify({
-        voice: "Vicki'',
+        voice: 'Vicki',
         content: [text],
       }),
     })
