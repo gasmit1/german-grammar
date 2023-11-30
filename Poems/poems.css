@@ -78,9 +78,6 @@ td {
 }
 
 .myButton {
-	position: fixed;
-	top: 20px;
-	right: 20px;
 	box-shadow: 1px #1c1b18;
 	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
 	background-color:#eae0c2;
@@ -109,4 +106,9 @@ td {
 	top: 20px;
 	right: 20px;
 	visibility: visible;
+}
+.videoframe {
+	position: fixed;
+	top: 50px;
+	right: 50px;
 }
