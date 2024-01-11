@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--Character set defined here -->
+<script src="../../exercises/playsound.js"></script>
+<LINK rel="stylesheet" type="text/css" href="../../grammar - Copy.css">
+<TITLE>Title</TITLE>
+</HEAD>
+
+<BODY class="content">
+<audio id="ttsPlayback"></audio>
+<label class="switch">
+  <input type="checkbox" id="audioSwitch" checked>
+  <span class="slider round"></span> </label>
+<TABLE WIDTH="100%">
+  <TR>
+    <TD class="buttoncell"><A href="../index.html" class="mybutton">&#9650;</A></TD>
+  </TR>
+</TABLE>
+<HR>
+<TABLE WIDTH="100%" border="1">
+  <TR>
+    <TD class="title">Title</TD>
+  </TR>
+</TABLE>
+<hr>
+<table width="100%" border="1" cellpadding="5" cellspacing="5" class="cuecell">
+  <tr>
+    <td class="headercell" border=0><img src="../../German flag.jpg" width="48" height="48" alt="US flag"><br>      <span class="German">Click in any field below to hear the sentence read aloud.</span></td>
+    <td class="headercell"><img src="../../US flag button.png" width="48" height="48" alt="US flag"> <br>
+    Click in any field below to reveal a translation.</td>
+  </tr>
+  <TR>
+    <td class="cuecell" onClick="onCueClick(this)"><div class="myDIV"><em>Zürich, die grösste Stadt der Schweiz und Hauptstadt des Kantons Zürich, ist eine pulsierende Metropole am nordwestlichen Zipfel des gleichnamigen Sees. Mit ihrem reichen Erbe, dem charmanten mittelalterlichen Stadtkern und der atemberaubenden Lage am Wasser bietet Zürich etwas für jeden Geschmack.</em></div></td>
+    <td><div class="myDIV">Zurich, the largest city in Switzerland and capital of the canton of Zurich, is a pulsating metropolis on the northwestern tip of the lake of the same name. With its rich inheritance, the charming medieval city center and the breathtaking location on the water, Zurich offers something for every taste.</div></td>
+  </tr>
+  <TR>
+    <td class="cuecell" onClick="onCueClick(this)"><div class="myDIV">
+      <table width="100%" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td><em><strong>Geschichte und Kultur:</strong> <br>
+            <br>
+            <strong>Altstadt: </strong>Das Herzstück Zürichs ist die Altstadt, ein Labyrinth aus gepflasterten Gassen, historischen Zünften und malerischen Plätzen. Hier kannst du die Fraumünsterkirche mit ihren fünf berühmten Chagall-Fenstern bewundern oder die Grossmünsterkirche mit ihrem Zwillingsturm besteigen, von dem aus du einen fantastischen Blick auf die Stadt hast.</em></td>
+          <td><img src="1.jpg" alt="Altstadt" width="250" height="200"></td>
+        </tr>
+      </table>
+    </div></td>
+    <td><div class="hide" id="Translation1" onClick="onTranslationClick(this)">
+      <p><strong>History and culture:</strong></p>
+      <p><strong>Altstadt:</strong> The heart of Zurich is the old town, a labyrinth of paved alleys, historical guilds and picturesque places. Here you can admire the Fraumünsterkirche with its five famous Chagall windows or climb the Grossmünsterkirche with its twin tower, from which you have a fantastic view of the city.</p>
+    </div></td>
+  </tr>
+  <TR>
+    <td class="cuecell" onClick="onCueClick(this)"><div class="myDIV">
+      <table width="100%" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td><em><strong>Kunsthaus Zürich:</strong> Liebhaber der modernen Kunst kommen im Kunsthaus Zürich auf ihre Kosten. Die Sammlung umfasst Werke von Monet, Picasso, Giacometti und vielen anderen berühmten Künstlern.</em></td>
+          <td><img src="2.jpg" alt="Kunsthaus Zürich" width="250" height="200"></td>
+        </tr>
+      </table>
+    </div></td>
+    <td><div class="hide" id="Translation2" onClick="onTranslationClick(this)"><strong>Kunsthaus Zurich:</strong> Lovers of modern art get their money's worth at the Kunsthaus Zurich. The collection includes works by Monet, Picasso, Giacometti and many other famous artists.</div></td>
+  </tr>
+  <TR>
+    <td class="cuecell" onClick="onCueClick(this)"><div class="myDIV">
+      <table width="100%" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td><em><strong>Nationalmuseum</strong>: Das Schweizerische Nationalmuseum erzählt die Geschichte der Schweiz von der Vorgeschichte bis zur Gegenwart. Die Dauerausstellung zeigt spannende Objekte aus den Bereichen Archäologie, Kunst und Volkskunde.</em></td>
+          <td><img src="3.jpg" alt="Schweizerische Nationalmuseum" width="250" height="200"></td>
+        </tr>
+      </table>
+    </td>
+    <td><div class="hide" id="Translation3" onClick="onTranslationClick(this)"><strong>National Museum: </strong>The Swiss National Museum tells the history of Switzerland from history to the present. The permanent exhibition shows exciting objects from the fields of archeology, art and folklore.</div></td>
+  </tr>
+  <TR>
+    <td class="cuecell" onClick="onCueClick(this)"><div class="myDIV">
+      <table width="100%" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td><p><strong>Natur und Freizeit:</strong></p>
+          <p><strong>Zürichsee:</strong> Der Zürichsee ist ein beliebtes Ziel für Schwimmen, Bootfahren, Stand-up-Paddling und Spaziergänge am Ufer. Im Sommer kannst du in einem der zahlreichen Strandbäder die Sonne geniessen.</p></td>
+          <td><img src="4.jpg" alt="Zürichsee" width="250" height="200"></td>
+        </tr>
+      </table>
+    </td>
+    <td><div class="hide" id="Translation4" onClick="onTranslationClick(this)">
+      <p><strong>Nature and leisure:</strong></p>
+      <p><strong>Lake Zurich:</strong> Lake Zurich is a popular destination for swimming, boating, stand-up paddling and walks on the bank. In summer you can enjoy the sun in one of the numerous beach baths.</p>
+    </div></td>
+  </tr>
+  <TR>
+    <td class="cuecell" onClick="onCueClick(this)"><div class="myDIV">
+      <table width="100%" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td><em><strong>Uetliberg:</strong> Der Uetliberg ist der Hausberg Zürichs und bietet einen atemberaubenden Panoramablick über die Stadt, den See und die Alpen. Mit der Uetlibergbahn kannst du bequem auf den Berg fahren und dort wandern, essen gehen oder einfach die Aussicht geniessen.</em></td>
+          <td><img src="5.jpg" alt="Uetliberg:" width="250" height="200"></td>
+        </tr>
+      </table>
+    </td>
+    <td><div class="hide" id="Translation5" onClick="onTranslationClick(this)"><strong>Uetliberg: </strong>The Uetliberg is the local mountain of Zurich and offers a breathtaking panoramic view of the city, the lake and the Alps. With the Uetlibergbahn you can comfortably ride up the mountain and hike there, go to dine or just enjoy the view.</div></td>
+  </tr>
+  <TR>
+    <td class="cuecell" onClick="onCueClick(this)"><div class="myDIV">
+      <table width="100%" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td><em><strong>Rieterpark:</strong> Der Rieterpark ist eine wunderschöne Parkanlage am Ufer des Zürichsees. Hier kannst du dich im Grünen entspannen, spazieren gehen oder ein Picknick machen.</em></td>
+          <td><img src="6.jpg" alt="Rieterpark:" width="250" height="200"></td>
+        </tr>
+      </table>
+    </td>
+    <td><div class="hide" id="Translation6" onClick="onTranslationClick(this)"><strong>Rieterpark: </strong>The Rieterpark is a beautiful park on the banks of Lake Zurich. Here you can relax, go for a walk or have a picnic.</div></td>
+  </tr>
+  <TR>
+    <td class="cuecell" onClick="onCueClick(this)"><div class="myDIV">
+      <table width="100%" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td><p><strong>Essen und Trinken</strong>:</p>
+            <p><strong>Zürcher Geschnetzeltes:</strong> Dieses traditionelle Gericht besteht aus Kalbsfleisch, Pilzen und Rahm und wird oft mit Rösti serviert.</p></td>
+          <td><img src="7.jpg" alt="Zürcher Geschnetzeltes" width="250" height="200"></td>
+        </tr>
+      </table>
+    </div></td>
+    <td><div class="hide" id="Translation7" onClick="onTranslationClick(this)">
+      <p><strong>Food and Drink:</strong></p>
+      <p><strong>Zurich sliced meat:</strong> This traditional dish consists of veal, mushrooms and cream and is often served with roasted potatoes.</p>
+    </div></td>
+  </tr>
+  <TR>
+    <td class="cuecell" onClick="onCueClick(this)"><div class="myDIV">
+      <table width="100%" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td><em><strong>Fondue: </strong>Natürlich darf auch Fondue bei einem Besuch in Zürich nicht fehlen. Dieses geschmolzene Käsegericht ist ein echter Schweizer Klassiker und schmeckt am besten in einem gemütlichen Chalet.</em></td>
+          <td><img src="8.jpg" alt="Fondue" width="250" height="200"></td>
+        </tr>
+      </table>
+    </div></td>
+    <td><div class="hide" id="Translation8" onClick="onTranslationClick(this)"><strong>Fondue:</strong> Of course, Fondue should not be missed when visiting Zurich. This melted cheese dish is a real Swiss classic and tastes best in a cozy chalet.</div></td>
+  </tr>
+  <TR>
+    <td class="cuecell" onClick="onCueClick(this)"><div class="myDIV">
+      <table width="100%" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td><em>Sprüngli: Die Confiserie Sprüngli ist eine Institution in Zürich und berühmt für ihre köstlichen Schokoladen und Pralinen.</em></td>
+          <td><img src="9.jpg" alt="Sprüngli" width="250" height="200"></td>
+        </tr>
+      </table>
+    </div></td>
+    <td><div class="hide" id="Translation9" onClick="onTranslationClick(this)"><strong>Sprüngli: </strong>The confectionery Sprüngli is an institution in Zurich and famous for its delicious chocolates and pralines.</div></td>
+  </tr>
+</table>
+</BODY>
+</HTML>

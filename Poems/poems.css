@@ -51,29 +51,31 @@ p {
 	font-size: x-large;
 	color: #000;
 	font-style: normal;
+	font-weight: bold;
 }
 
 .EnglishText {
 	font-size: 18px;
 	font-style: normal;
 	color: #000;
+	valign: top;
 }
 
 .GermanText {
 	font-size: 18px;
 	font-style: italic;
 	color: #000;
+	valign: top;
 }
 
 a {
-	font-size: x-large;
-	text-align: center;
+	text-align: right;
 }
 
 td {
 	valign: top;
 	background-color: #FFC;
-	opacity: 0.7;
+	opacity: 1;
 	font-style: normal;
 }
 

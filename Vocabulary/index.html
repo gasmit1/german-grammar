@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vocabulary practice</title>
+<script src="../exercises/playsound.js"></script>
+<LINK rel="stylesheet" type="text/css" href="../grammar - Copy.css"/">
+<style type="text/css">
+.centercell {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100px;
+	vertical-align: middle;
+	text-align: center;
+}
+.headercell {
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+<center>
+<!--<button id="Gender" class="myButton" onclick="changeText("Gender")">Gender</button>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button id="Plural" class="myButton" onclick="changeText("Plural")">Plural</button>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button id="Translation" class="myButton" onclick="changeText("Translation")">Translation</button>
+  <table border="0" cellpadding="5" cellspacing="5">
+    <tr>
+      <td class="centercell"><span id="myspan">Universität</span></td>
+    </tr>
+  </table>
+  <script>
+ function changeText(x)	{
+  document.getElementById("myspan").innerText = x;
+  }
+</script> -->
+
+	<p id="GFG_UP" style="font-size: 15px; 
+						font-weight: bold;">
+	</p>
+
+	<button id="Gender" class="myButton" onClick="GFG_click(this.id)">
+		Gender
+	</button>
+
+	<button id="Plural" class="myButton" onClick="GFG_click(this.id)">
+		Plural
+	</button>
+
+	<button id="Translation" class="myButton" onClick="GFG_click(this.id)">
+		Translation
+	</button>
+    
+      <table border="0" cellpadding="5" cellspacing="5">
+    <tr>
+      <td class="centercell"><p class="centercell" id="GFG_DOWN">Universität</p></td>
+    </tr>
+  </table>
+
+	<script>
+		var el_up = document.getElementById("GFG_UP");
+		var el_down = document.getElementById("GFG_DOWN");
+
+		function GFG_click(clicked) {
+			el_down.innerHTML = clicked;
+		}	 
+	</script>
+
+</center>
+</body>
+</html>

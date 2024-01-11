@@ -7,9 +7,7 @@
 <file name="datform.htm" server="ftp.hollyforks.com///" local="130600656000000000" remote="130600656000000000" />
 <file name="datfunc.htm" server="ftp.hollyforks.com///" local="130600656000000000" remote="130600656000000000" />
 <file name="derword1.htm" server="ftp.hollyforks.com///" local="130600656000000000" remote="130600656000000000" />
-<file name="derword2.htm" server="ftp.hollyforks.com///" local="130600656000000000" remote="130600656000000000" />
 <file name="einword1.htm" server="ftp.hollyforks.com///" local="130600656000000000" remote="130600656000000000" />
-<file name="einword2.htm" server="ftp.hollyforks.com///" local="130600656000000000" remote="130600656000000000" />
 <file name="gender.htm" server="ftp.hollyforks.com///" local="130600656000000000" remote="130600656000000000" />
 <file name="genform.htm" server="ftp.hollyforks.com///" local="130600656000000000" remote="130600656000000000" />
 <file name="genfunc.htm" server="ftp.hollyforks.com///" local="130600656000000000" remote="130600656000000000" />
@@ -23,9 +21,7 @@
 <file name="datform.htm" server="50.87.140.189/public_html/" local="133230608832229718" remote="133286311130000000" />
 <file name="datfunc.htm" server="50.87.140.189/public_html/" local="133230608832301168" remote="133286311130000000" />
 <file name="derword1.htm" server="50.87.140.189/public_html/" local="133270281418159777" remote="133286311130000000" />
-<file name="derword2.htm" server="50.87.140.189/public_html/" local="133230608832552764" remote="133286311140000000" />
 <file name="einword1.htm" server="50.87.140.189/public_html/" local="133270281418665575" remote="133286311140000000" />
-<file name="einword2.htm" server="50.87.140.189/public_html/" local="133230608832692794" remote="133286311140000000" />
 <file name="gender.htm" server="50.87.140.189/public_html/" local="133270281419163129" remote="133286311140000000" />
 <file name="genform.htm" server="50.87.140.189/public_html/" local="133230608832820684" remote="133286311150000000" />
 <file name="genfunc.htm" server="50.87.140.189/public_html/" local="133230608832892232" remote="133286311150000000" />
@@ -39,4 +35,8 @@
 <file name="einword1.htm" server="ftp.hollyforks.com//public_html/" local="133331510530360447" remote="133331440200000000" />
 <file name="plurals.htm" server="ftp.hollyforks.com//public_html/" local="133371029643598576" remote="133370958000000000" />
 <file name="datfunc.htm" server="ftp.hollyforks.com//public_html/" local="133375331224716116" remote="133375258800000000" />
+<file name="derword1.htm" server="ftp.hollyforks.com/public_html/" local="133461769523559250" remote="133461734400000000" />
+<file name="der_ein words.htm" server="ftp.hollyforks.com/public_html/" local="133462839990428905" remote="133462803600000000" />
+<file name="plurals.htm" server="ftp.hollyforks.com/public_html/" local="133462814105992601" remote="133462777800000000" />
+<file name="genfuncform.htm" server="ftp.hollyforks.com/public_html/" local="133462806684230254" remote="133462790400000000" />
 </dwsync>

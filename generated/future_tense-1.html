@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="../exercises/playsound.js"></script>
+<LINK rel="stylesheet" type="text/css" href="../grammar - Copy.css">
+<TITLE>Future tense</TITLE>
+</HEAD>
+
+<BODY class="content">
+<audio id="ttsPlayback"></audio>
+<label class="switch">
+  <input type="checkbox" id="audioSwitch" checked>
+  <span class="slider round"></span> </label>
+<TABLE WIDTH="100%">
+  <TR>
+    <TD class="buttoncell"><A href="../verbsot/future.htm" class="mybutton"><img src="../page icon.png" width="25" height="25" alt="Grammar page"></A></TD>
+  </TR>
+</TABLE>
+<HR>
+<TABLE WIDTH="100%" border="1">
+  <TR>
+    <TD class="title">Future tense</TD>
+  </TR>
+</TABLE>
+<hr>
+<table width="100%" border="1" cellpadding="5" cellspacing="5" class="cuecell">
+  <tr>
+    <td  class="instructioncell" border=0><p>Say what will happen at various times in the future.</p></td>
+    <td class="headercell"><img src="../US flag button.png" width="48" height="48" alt="US flag"><br>
+      Click in any field below to reveal a translation.<br>
+      Click again to hide it.</td>
+    <td  class="headercell"><img src="../German flag.jpg" width="48" height="48" alt="Germany flag"><br>
+      <span class="German">Klicken Sie auf ein Feld unten, um die richtige Antwort zu sehen.<br>
+      Klicken Sie nochmals darauf, um es zu l&ouml;schen.</span></td>
+  </tr>
+  <tr>
+  <TR>
+    <TD colspan=3></TD>
+  </TR>
+  
+    <td width="50%" class="cuecell" onClick="onCueClick(this)"><div class="myDIV"><em>Was hast du morgen vor? (<font class="emphasis2">ein neues Buch kaufen</font>)</em></div></td>
+    <td><div class="myDIV">What are you planning to do tomorrow? (buy a new book)<br>
+      Tomorrow, I <font class="emphasis2">will buy</font> a new book.</div></td>
+    <td width="25%" class="cuecell" onClick="onCueClick(this)"><div class="myDIV"><em> Morgen <font class="emphasis2">werde</font> ich ein neues Buch <font class="emphasis2">kaufen</font>.</em></div></td>
+  </tr>
+  <tr>
+    <td class="cuecell" onClick="onCueClick(this)"><ol start="1">
+        <li>
+          <div class="myDIV"><em>Was macht Sabine bald? (<font class="emphasis2">einen neuen Job finden</font>)</em></div>
+        </li>
+      </ol></td>
+    <td class="translationcell"><div class="hide" id="Translation1" onClick="onTranslationClick(this)">
+<p>What will Sabine do soon? (find a new job)<br>
+          Soon, she <font class="emphasis2">will find</font> a new job.</p>
+</div></td>
+    <td width="25%" valign="top"><div class="hide" id="Answer1" onClick="onAnswerClick(this)"><em>Bald <font class="emphasis2">wird</font> sie einen neuen Job <font class="emphasis2">finden</font>. </em></div></td>
+  </tr>
+  <tr>
+    <td class="cuecell"><ol start="2">
+        <li>
+          <div class="myDIV"><em>Was haben deine Mitschüler am Samstag vor? (<font class="emphasis2">Freunde treffen</font>)</em></div>
+        </li>
+      </ol></td>
+    <td><div class="hide" id="Translation2" onClick="onTranslationClick(this)">What do your school friends have planned for Saturday? (meet friends)<br>
+    On Saturday, they <font class="emphasis2">will meet</font> their friends.</div></td>
+    <td width="25%" valign="top"><div class="hide" id="Answer2" onClick="onAnswerClick(this)"><em>Am Samstag <font class="emphasis2">werden</font> sie ihre Freunde <font class="emphasis2">treffen</font>. </em></div></td>
+  </tr>
+  <tr>
+    <td class="cuecell"><ol start="3">
+        <li>
+          <div class="myDIV"><em>Wohin fahrt ihr nächstes Jahr? (<font class="emphasis2">nach Australien</font>)</em></div>
+        </li>
+      </ol></td>
+    <td><div class="hide" id="Translation3" onClick="onTranslationClick(this)"> Where do you plan to go next year?<br>
+    Next year, we <font class="emphasis2">will travel</font> to Australia. </div></td>
+    <td width="8" valign="top"><div class="hide" id="Answer3" onClick="onAnswerClick(this)"><em>Nächstes Jahr <font class="emphasis2">werden</font> wir nach Australien <font class="emphasis2">reisen</font>.</em></div></td>
+  </tr>
+  <tr>
+    <td class="cuecell"><ol start="4">
+        <li>
+          <div class="myDIV"><em>Wann schlliesst du dein Studium ab? (<font class="emphasis2">in fünf Jahren</font>)</em></div>
+        </li>
+      </ol></td>
+    <td><div class="hide" id="Translation4" onClick="onTranslationClick(this)">When do you complete your studies?<br>
+    In five years, I <font class="emphasis2">will  complete</font> my studies.</div></td>
+    <td width="25%" valign="top"><div class="hide" id="Answer4" onClick="onAnswerClick(this)"><em>In fünf Jahren <font class="emphasis2">werde</font> ich mein Studium <font class="emphasis2">abschliessen</font>. </em></div></td>
+  </tr>
+  <tr>
+    <td class="cuecell"><ol start="5">
+        <li>
+          <div class="myDIV"><em>Was habt ihr im Sommer vor? (<font class="emphasis2">in den Urlaub fahren</font>)</em></div>
+        </li>
+      </ol></td>
+    <td><div class="hide" id="Translation5" onClick="onTranslationClick(this)">What do you have planned for the summer? (go on vacation)<br>
+    In summer, we <font class="emphasis2">will go</font> on vacation.</div></td>
+    <td width="25%" valign="top"><div class="hide" id="Answer5" onClick="onAnswerClick(this)"><em>Im Sommer <font class="emphasis2">werden</font> wir in den Urlaub <font class="emphasis2">fahren</font>. </em></div></td>
+  </tr>
+  <tr>
+    <td class="cuecell"><ol start="6">
+        <li>
+          <div class="myDIV"><em>Was machen wir nächstes Wochenende? (<font class="emphasis2">den Garten aufräumen</font>)</em></div>
+        </li>
+      </ol></td>
+    <td><div class="hide" id="Translation6" onClick="onTranslationClick(this)">What are we doing next weekend?<br>
+    Next weekend, you all<span class="emphasis2"> will clean up</span> the garden.</div></td>
+    <td width="25%" valign="top"><div class="hide" id="Answer6" onClick="onAnswerClick(this)"><em>Am nächsten Wochenende <font class="emphasis2">werdet</font> ihr den Garten <font class="emphasis2">aufräumen</font>. </em></div></td>
+  </tr>
+  <tr>
+    <td class="cuecell"><ol start="7">
+        <li>
+          <div class="myDIV"><em>Was haben Sie in zehn Jahren vor? (<font class="emphasis2">ein eigenes Haus haben</font>)</em></div>
+        </li>
+      </ol></td>
+    <td><div class="hide" id="Translation7" onClick="onTranslationClick(this)">What do you plan for ten years from now?<br>
+    In ten years, I <span class="emphasis2">will have</span> my own house.</div></td>
+    <td width="25%" valign="top"><div class="hide" id="Answer7" onClick="onAnswerClick(this)"><em> In zehn Jahren <font class="emphasis2">werde</font> ich ein eigenes Haus <font class="emphasis2">haben</font>.</em></div></td>
+  </tr>
+  <tr>
+    <td class="cuecell"><ol start="8">
+        <li>
+          <div class="myDIV"><em>Was hast du im neuen Jahr vor? (<font class="emphasis2">mit dem Rauchen aufhören</font>)</em></div>
+        </li>
+      </ol></td>
+    <td><div class="hide" id="Translation8" onClick="onTranslationClick(this)">What do you plan for the new year?<br>
+    In the new year, <span class="emphasis2">I will quit</span> smoking.</div></td>
+    <td width="25%" valign="top"><div class="hide" id="Answer8" onClick="onAnswerClick(this)"><em> Im neuen Jahr <font class="emphasis2">werde</font> ich mit dem Rauchen <font class="emphasis2">aufhören</font>. </em></div></td>
+  </tr>
+  <tr>
+    <td class="cuecell"><ol start="9">
+        <li>
+          <div class="myDIV"><em>Was macht ihr im Herbst? (<font class="emphasis2">einen neuen Präsidenten wählen</font>)</em></div>
+        </li>
+      </ol></td>
+    <td><div class="hide" id="Translation9" onClick="onTranslationClick(this)">What are you all doing in the fall?<br>
+    In the fall, we <font class="emphasis2">will elect</font> a new president.</div></td>
+    <td width="25%" valign="top"><div class="hide" id="Answer9" onClick="onAnswerClick(this)"><em>Im Herbst <font class="emphasis2">werden</font> wir einen neuen Präsidenten <font class="emphasis2">wählen</font>. </em></div></td>
+  </tr>
+  <tr>
+    <td class="cuecell"><ol start="10">
+        <li>
+          <div class="myDIV"><em>Was passiert im Oktober? (<font class="emphasis2">die Blätter bunt werden</font>)</em></div>
+        </li>
+      </ol></td>
+    <td><div class="hide" id="Translation10" onClick="onTranslationClick(this)">What happens in October?<br>
+    In October, the leaves <font class="emphasis2">will turn</font> colorful.</div></td>
+    <td width="25%" valign="top"><div class="hide" id="Answer10" onClick="onAnswerClick(this)"><em>Im Oktober <font class="emphasis2">werden</font> die Blätter bunt <font class="emphasis2">werden</font>. </em></div></td>
+  </tr>
+</table>
+</BODY>
+</HTML>

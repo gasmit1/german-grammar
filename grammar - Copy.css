@@ -26,6 +26,7 @@ BODY {
 	font-family: "Times New Roman", Times, serif;
 	text-align: center;
 	text-decoration: underline;
+	padding:10;
 }
 
 .subsubtitle {
@@ -385,4 +386,9 @@ GermanStatement {
 	font-style: italic;
 	text-align: left;
 	vertical-align: top;
+}
+
+img {
+  border: 2px solid black;
+  border-radius: 8px;
 }
